@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 105.1 81.9" style="enable-background:new 0 0 105.1 81.9;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#D60A0A;}
+	.st2{fill:#514949;}
+	.st3{fill:#554747;}
+	.st4{fill:none;}
+	.st5{font-family:'Rockwell-ExtraBold';}
+	.st6{font-size:24px;}
+</style>
+<polygon class="st0" points="44.9,12.7 59.6,12.7 59.6,48.2 87.9,48.2 87.9,61.6 59.6,61.6 59.6,73.5 52.2,79.6 44.9,73.6 
+	44.9,61.6 16.4,61.6 16.4,48.2 45,48.2 "/>
+<g>
+	<path class="st1" d="M103,3v19.9c0,0-0.3,14.6-19.9,22.4c0,0,0.5-9.4-6.5-17c0,0,22.1,3,24-25.3H103z"/>
+	<g>
+		<polyline class="st1" points="103,3 101.9,1.7 100.6,3 		"/>
+	</g>
+</g>
+<g>
+	<path class="st1" d="M1.3,3v19.9c0,0,0.3,14.6,20.4,22.4c0,0-0.6-9.4,6.6-17c0,0-22.6,3-24.6-25.3H1.3z"/>
+	<g>
+		<polyline class="st1" points="1.3,3 2.4,1.7 3.8,3 		"/>
+	</g>
+</g>
+<path class="st2" d="M83.5,48.2c0,0,1.7-24.1-23.8-30.4v30.4"/>
+<circle class="st3" cx="52.1" cy="26.1" r="2.6"/>
+<circle class="st3" cx="25.8" cy="55.7" r="2.6"/>
+<circle class="st3" cx="78.5" cy="55.7" r="2.6"/>
+<circle class="st3" cx="38" cy="55.7" r="2.6"/>
+<circle class="st3" cx="66.7" cy="55.7" r="2.6"/>
+<circle class="st3" cx="52.2" cy="55.7" r="4.7"/>
+<path class="st2" d="M45,48.2V17.4c-25.5,6.4-23.8,30.8-23.8,30.8"/>
+<rect x="24.7" y="35" class="st4" width="65.1" height="17.5"/>
+<text transform="matrix(1 0 0 1 24.7436 51.3341)" class="st1 st5 st6">VAK</text>
+</svg>

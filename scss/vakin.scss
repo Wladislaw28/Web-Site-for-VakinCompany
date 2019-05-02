@@ -1,0 +1,6587 @@
+$black: #000;
+$red: #df0c0c;
+$white: #fff;
+$dark-red: #9d0e0e;
+
+
+
+@font-face {
+	font-family: 'Rockwell-ExtraBold';
+	src: url("../fonts/Rockwell-ExtraBold.otf");
+	font-weight: 900;
+}
+
+@font-face {
+	font-family: 'Tahoma';
+	src: url("../fonts/Tahoma.ttf");
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Tahoma';
+	src: url("../fonts/Tahoma Bold.ttf");
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: 'Verdana';
+	src: url("../fonts/Verdana Pro Bold.otf");
+	font-weight: 700;
+}
+@font-face {
+	font-family: 'ITC Franklin Gothic Medium';
+	src: url("../fonts/ITC Franklin Gothic Medium.otf");
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'Georgia';
+	src: url("../fonts/Georgia.ttf");
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Franklin Gothic Heavy';
+	src: url("../fonts/Franklin Gothic Heavy Regular.ttf");
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Bookman Old Style';
+	src: url("../fonts/BOOKOS.TTF");
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Bookman Old Style';
+	src: url("../fonts/BOOKOSB.TTF");
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: 'Corbel';
+	src: url("../fonts/CORBEL.TTF");
+	font-weight: 400;
+}
+
+
+@font-face {
+	font-family: 'Sylfaen';
+	src: url("../fonts/Sylfaen Regular.ttf");
+	font-weight: 400;
+}
+
+
+@font-face {
+	font-family: 'Century Schoolbook';
+	src: url("../fonts/CENSCBK.TTF");
+	font-weight: 400;
+}
+
+
+
+
+body,html {
+	padding: 0;
+	margin: 0;
+}
+
+h4 {
+	color: $black !important;
+}
+
+.slick-prev {
+	position: absolute;
+	top: 50%;
+	left: 10%;
+	font-size: 30px;
+	z-index: 999;
+	background-color: transparent;
+	border: none;
+	   &:hover {
+	   	color: $white;
+	   	transition: all 0.4s ease;
+	   }
+}
+.slick-next {
+	position: absolute;
+	top: 50%;
+	left: 90%;
+	font-size: 30px;
+	z-index: 999;
+	background-color: transparent;
+	border: none;
+   &:hover {
+   	color: $white;
+   	transition: all 0.4s ease;
+   }
+}
+
+
+
+.icon {
+	width: 80px;
+}
+
+.navbar {
+	background-color: $black;
+	height: 85px;
+	padding: 0;
+	margin: 0;
+}
+
+
+.nav-container {
+	height: inherit;
+}
+
+.nav-logo {
+	width: 90px;
+	height: 75px;
+}
+.navbar-light .navbar-nav .nav-link {
+	font-family: 'Tahoma', sans-serif;
+	color: $red;
+	display: block;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	&:hover {
+		color: $red;
+	}
+}
+.navbar-collapse {
+	height: inherit;
+	text-align: center;
+}
+
+.navbar-nav {
+	height: inherit;
+}
+
+.navbar-collapse {
+	background-color: $black;
+}
+
+.nav-item {
+	margin: auto;
+	width: 180px;
+	text-align: center;
+	height: inherit;
+	font-size: 18px;
+	
+	&:hover {
+		color: $red;
+		background-color: $white;
+	}
+}
+
+
+.logo-text {
+	font-family: 'Rockwell-ExtraBold', sans-serif;
+	font-weight: 900;
+	color: $red;
+	font-size: 30px;
+	
+}
+
+.header-list {
+  list-style-type: none;
+}
+ 
+.header-list-item:before {
+  content: "\2B24";
+  padding-right: 10px;
+}
+
+#parallelogram {
+	display: block;
+	width: 415px;
+	height: 290px;
+	-webkit-transform: skew(-20deg);
+	   -moz-transform: skew(-20deg);
+	     -o-transform: skew(-20deg);
+	background: #2d1b1b;
+	opacity: 0.812;
+	position: absolute; 
+	top: 0; 
+	left: 0;
+
+}
+
+.slick-slide {
+	height: 1000px;
+}
+/* Header */
+
+.header-2 {
+	width: 100%;
+    height: 1000px;
+    background: url("../img/header-2-bg.jpg") no-repeat center center scroll !important;
+    background-size: cover !important;
+    &-subline {
+    	text-align: center;
+    	font-size: 20px;
+    }
+    &-list{
+    	&-under {
+    		width: 100%;
+    		top: 50% !important;
+    	}
+    }
+    &-bonus {
+    	text-align: center;
+    	margin-top: -20px;
+    	span {
+    		margin-left: 0 !important;
+    	}
+    }
+}
+.header	{
+	width: 100%;
+    height: 1000px;
+    background: url("../img/header-2-bg.jpg") no-repeat center center scroll;
+    background-size: cover;
+
+    &-row {
+    	margin-top: 30px;
+    }
+
+    &-image {
+    	width: 560px;
+    	height: 475px;
+    	margin-top: -80px;
+    	margin-left: 40px;
+    }
+    h1 {
+    	text-transform: uppercase;
+    	margin-top: 170px;
+    	font-family: 'Verdana';
+    	font-weight: 700;
+    	font-size: 55px;
+    	color: $white;
+    }
+
+    &-subline {
+    	margin-top: 65px;
+    	text-transform: uppercase;
+    	font-family: 'ITC Franklin Gothic Medium';
+    	font-size: 24px;
+    	color: $white;
+    	padding-left: 120px;
+    }
+
+    &-list {
+    	&-under {
+    		font-family: 'Georgia';
+    		color: $red;
+    		font-size: 26px;
+    		position: absolute; 
+    	    top: 63%;
+    	    left: 20%;
+    	    margin-left: -80px;
+    	}
+    	position: absolute; 
+    	top: 0%;
+    	margin-left: 20px;
+    	margin-top: 30px;
+    	font-family: 'Georgia';
+    	font-size: 24px;
+    	color: $white;
+    	&-item {
+    		margin-bottom: 10px;
+    	}
+    }
+
+    &-button {
+    	background-color: #800e0e;
+    	display: block;
+    	border: 5px $black solid;
+    	text-align: center;
+    	font-family: 'Georgia';
+    	width: 205px;
+    	height: 50px;
+    	text-transform: uppercase;
+    	text-decoration: none;
+    	font-size: 24px;
+    	color: $white;
+    	&:hover {
+    		text-decoration: none;
+    		color: $white;
+    		background-color: $dark-red;
+    	}
+    }
+
+    &-bonus{
+    	&-text {
+    	font-family: 'ITC Franklin Gothic Medium';
+    	font-size: 24px;
+    	color: $white;
+    	margin-bottom: 0;
+    }
+    	span {
+    		margin-left: 150px;
+    		font-family: 'ITC Franklin Gothic Medium';
+    		text-transform: uppercase;
+    		color: $black;
+    		font-size: 24px;
+    	}	
+    }
+}
+
+button, 
+button:active, 
+button:focus {
+    outline: none;
+}
+
+
+
+/* Site development */
+#sitedevelopment {
+	background: $white url("../img/fon_163.jpg") no-repeat center center scroll;
+    background-size: cover;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(0, 0, 0);
+    box-shadow: inset 0px 15px 69.66px 19.34px rgba(111, 13, 13, 0.7);
+    position: static;
+    z-index: 111;
+}
+
+.sitedevelopment {
+	height: 1300px;
+	z-index: 333;
+    
+    &-price {
+    	height: inherit;
+    	padding: 0;
+    	&:hover {
+    		color: $dark-red !important;
+    	}
+    }
+    &-header {
+	    text-align: center;
+		color: $dark-red;
+		margin-top: 50px;
+		font-family: 'Franklin Gothic Heavy';
+		font-size: 36px;
+    }
+	
+	&-box {
+		opacity: .99;
+		width: 270px;
+		margin-top: 40px;
+		text-align: center;
+		&-2 {
+			margin-left: 115px;
+		}
+		h3 {
+			padding-top: 180px;
+			text-transform: uppercase;
+			font-family: 'Bookman Old Style';
+			font-weight: 700;
+			font-size: 24px;
+			color: $black;
+			margin-top: 40px;
+		}
+		h4 {
+			text-transform: uppercase;
+			font-family: 'Bookman Old Style';
+			font-weight: 700;
+			font-size: 24px;
+			color: $black;
+			margin-top: 40px;
+		}
+
+		&-bg {
+			 margin-top: -180px;
+			 background-color: rgb(107, 8, 8);
+             box-shadow: inset 0px 6px 85.5px 4.5px rgba(0, 0, 0, 0.52);
+             position: relative;
+             
+             width: 270px;
+             height: 880px;
+             z-index: 244;
+
+             p {
+             	color: $white;
+             	font-family: 'Sylfaen';
+             	font-size: 24px;
+             }
+		}
+
+		h4 {
+			padding-bottom: 100px;
+		}
+		&-image {
+			margin-left: 15px;
+			width: 230px;
+			height: 230px;
+			position: relative;
+			z-index: 333;
+		}
+
+		&-ultro {
+			
+			h3 {
+				padding-bottom: 168px;
+			}
+		}
+
+		&-button {
+			font-family: 'ITC Franklin Gothic Medium';
+			text-transform: uppercase;
+			color: $white;
+			font-size: 14px;
+			border: none;
+			padding-left: 20px;
+			padding-right: 20px;
+			padding-top: 15px;
+			padding-bottom: 15px;
+			background-color: $black;
+			&:hover {
+				text-decoration: none;
+				color: $white;
+				background-color: #aeaeae;
+				transition: all 0.5s;
+			}
+		}
+		&-area {
+			font-family: 'Bookman Old Style';
+			font-weight: 700;
+			display: block;
+			height: 80px;
+			width: inherit;
+			margin-top: 25px;
+			margin-bottom: 75px;
+			border: 5px $red solid;
+			background-color: $black;
+			&-image {
+				float: left;
+				vertical-align: middle;
+			}
+			p  {
+				margin-top: 16px;
+				margin-bottom: 0px;
+				font-size: 28px;
+				height: inherit;
+			}
+		}
+
+		&-link {
+			font-family: 'ITC Franklin Gothic Medium';
+			font-weight: 400;
+			font-size: 24px;
+			background-color: transparent;
+			border: none;
+			text-transform: uppercase;
+			text-decoration: none;
+			color: $white;
+			&:hover {
+				text-decoration: none;
+				color: $black;
+			}
+		}
+
+	}
+
+}
+
+
+.date {
+	margin-bottom: 100px;
+}
+
+
+/* SMM */
+
+
+
+.smm {
+	height: 1300px;
+	border-style: solid;
+    border-width: 3px;
+    border-color: rgb(0, 0, 0);
+    background: url("../img/fon_163.jpg") no-repeat center center scroll;
+    background-size: cover;
+    box-shadow: inset 0px 15px 69.66px 19.34px rgba(111, 13, 13, 0.7);
+   
+
+    &-header {
+	    text-align: center;
+		color: $dark-red;
+		margin-top: 50px;
+		font-family: 'Franklin Gothic Heavy';
+		font-size: 36px;
+    }
+	
+	&-box {
+		opacity: .99;
+		width: 100%;
+		margin-top: 12px;
+		margin-left: auto;
+		text-align: center;
+		h3 {
+			padding-top: 180px;
+			text-transform: uppercase;
+			font-family: 'Bookman Old Style';
+			font-weight: 700;
+			font-size: 24px;
+			color: $black;
+			margin-bottom: 12px;
+		}
+
+		&-bg {
+			 margin-top: -180px;
+	    	 background-color: rgb(107, 8, 8);
+             box-shadow: inset 0px 5px 85.5px 4.5px rgba(0, 0, 0, 0.52);
+             width: 100%;
+             z-index: 244;
+          
+		}
+
+		&-mark {
+			display: block;
+			float: left;
+			width: 35px;
+			height: 35px;
+			vertical-align: middle;
+		}
+
+		p {
+			color: $black !important;
+			font-family: 'Tahoma';
+			font-weight: 700;
+			font-size: 24px;
+
+		}
+		
+		&-image {
+			width: 230px;
+			height: 230px;
+			margin-bottom: 60px;
+			
+			z-index: 522;
+		}
+
+		
+
+		&-button {
+			font-family: 'ITC Franklin Gothic Medium';
+			text-transform: uppercase;
+			color: $white;
+			font-size: 14px;
+			border: none;
+			padding-left: 20px;
+			padding-right: 20px;
+			padding-top: 15px;
+			padding-bottom: 15px;
+			background-color: $black;
+			&:hover {
+				text-decoration: none;
+				color: $white;
+				background-color: #aeaeae;
+				transition: all 0.5s;
+			}
+		}
+		&-area {
+			font-family: 'Bookman Old Style';
+			font-weight: 700;
+			display: block;
+			height: 80px;
+			width: 100%;
+			margin-top: 25px;
+			margin-bottom: 75px;
+			border: 5px $red solid;
+			background-color: $black;
+			&-image {
+				float: left;
+			}
+			p  {
+				color: $white !important;
+				margin-top: 16px;
+				margin-bottom: 0px;
+				font-size: 28px;
+				height: inherit;
+			}
+		}
+
+		&-link {
+			font-family: 'ITC Franklin Gothic Medium';
+			font-weight: 400;
+			font-size: 24px;
+			text-transform: uppercase;
+			text-decoration: none;
+			background-color: transparent;
+			border: none;
+			color: $white;
+			&:hover {
+				text-decoration: none;
+				color: $black;
+			}
+		}
+
+	}
+
+}
+.smm-box-bg-target {
+	padding-top: 0px !important;
+	padding-bottom: 8px;
+	span {
+		font-size: 14px;
+	}
+}
+
+/* Case */
+
+
+
+.case {
+	height: 1200px;
+	border-style: solid;
+    border-width: 3px;
+    border-color: rgb(0, 0, 0);
+ 	background: url("../img/fon_163.jpg") no-repeat center center scroll;
+    background-size: cover;
+    box-shadow: inset 0px 15px 69.66px 19.34px rgba(111, 13, 13, 0.7);
+   
+
+    &-header {
+	    text-align: center;
+		color: $dark-red;
+		margin-top: 50px;
+		font-family: 'Franklin Gothic Heavy';
+		font-size: 36px;
+    }
+	
+	&-box {
+		opacity: .99;
+		width: 270px;
+		margin-top: 40px;
+		text-align: center;
+		
+		&-bg {
+			 
+			 background-color: rgb(107, 8, 8);
+             box-shadow: inset 0px 6px 85.5px 4.5px rgba(0, 0, 0, 0.52);
+             
+             width: 270px;
+             padding-bottom: 180px;
+             z-index: 244;
+
+             h3 {
+             	padding-top: 40px;
+             }
+             p {
+             	color: $white;
+             	font-family: 'Sylfaen';
+             	font-size: 24px;
+             }
+		}
+
+		h3 {
+			color: $black !important;
+			text-transform: uppercase;
+			font-family: 'Bookman Old Style';
+			font-weight: 700;
+			font-size: 24px;
+			color: $black;
+			margin-bottom: 40px;
+		}
+		&-ultro {
+			
+			margin-bottom: 0px;
+			h3 {
+				padding-top: 75px;
+			}
+		}
+
+		&-plus {
+			margin-top: 25px;
+			margin-bottom: 25px;
+			text-align: center;
+			width: 30px;
+			height: 30px;
+			
+		}
+
+		p {
+			font-family: 'Tahoma';
+			font-weight: 700;
+			font-size: 24px;
+
+		}
+		
+		&-image {
+			width: 230px;
+			height: 230px;
+			margin-bottom: 60px;
+		}
+
+		&-block {
+
+			margin-top: 20px;
+			text-align: center;
+		}
+
+		&-button {
+			border: none;
+			text-align: center;
+			font-family: 'ITC Franklin Gothic Medium';
+			text-transform: uppercase;
+			color: $white;
+			font-size: 24px;
+			width: 310px;
+			height: 55px;
+			background-color: $black;
+			border-radius: 10px;
+			&:hover {
+				text-decoration: none;
+				color: $black;
+				border: 3px $black solid;
+				background-color: $white;
+				transition: all 0.5s;
+			}
+		}
+		&-area {
+			display: block;
+			height: 80px;
+			width: 270px;
+			margin-top: 25px;
+			margin-left: 45px;
+			margin-bottom: 75px;
+			border: 5px $red solid;
+			background-color: $black;
+			&-image {
+				float: left;
+			}
+		}
+
+		&-link {
+			text-align: center;
+			border: none;
+			background-color: $white;
+			font-family: 'ITC Franklin Gothic Medium';
+			font-weight: 400;
+			font-size: 16px;
+			color: $dark-red;
+			margin-top: 35px;
+			text-transform: uppercase;
+			text-decoration: underline;
+			
+			&:hover {
+				text-decoration: none;
+				color: $dark-red;;
+			}
+		}
+
+	}
+
+}
+
+.sunduk {
+	&-box {
+		margin-top: -180px;
+		margin-left: -20px;
+		&-button {
+			width: 245px;
+			height: 245px;
+			border: none;
+			background: url("../img/sunduk-ultro.png");
+			background-size: cover;
+			background-color: transparent;
+			&:hover {
+				background: url("../img/sunduk-ultro-hover.png");
+			background-size: cover;
+			}
+		}
+	}
+	&-side {
+		margin-left: 30px;
+		width: 240px;
+		height: 240px;
+		
+	}
+	&-center {
+		margin-left: 20px;
+		width: 270px;
+		height: 300px;
+		
+	}
+}
+
+.ultro-text {
+	position: absolute;	
+	font-family: 'Franklin Gothic Heavy';
+	font-weight: 700;
+	color: #48494b;
+	top: 80%;
+    left: 25%;
+    transform: rotate(10deg);
+
+}
+
+.notebook{
+	&-image {
+	height: 823px;
+	background: url("../img/notebook-image.jpg") no-repeat center center scroll;
+    background-size: cover;
+   
+  }
+    &-header {
+    	text-align: center;
+    	margin-top: 50px;
+    	&-text {
+    		font-family: 'Century Schoolbook';
+			font-weight: 400;
+			color: $white;
+			font-size: 36px;
+    	}
+    }
+    &-quote {
+    	font-family: 'Century Schoolbook';
+			font-weight: 400;
+			color: $white;
+			font-size: 24px;
+    }
+    &-box {
+
+    	&-text {
+    		font-family: 'ITC Franklin Gothic Medium';
+			font-weight: 400;
+			color: $white;
+			font-size: 20px;
+    	}
+    	&-image {
+    		width: 450px;
+    		height: 670px;
+    	}
+    }
+}
+
+
+/* Features */
+
+.features {
+	height: 890px;
+	background: url("../img/features-bg.jpg") no-repeat center center scroll;
+    background-size: cover;
+   
+	&-header {
+		margin-top: 60px;
+		text-align: center;
+	}
+	&-box {
+		padding-left: 0;
+		padding-right: 0;
+		border-bottom: 3px black solid;
+		text-transform: uppercase;
+		h5 {
+			font-family: 'ITC Franklin Gothic Medium';
+			font-weight: 400;
+			font-size: 22px;
+			text-transform: uppercase;
+			margin-top: 20px;
+			padding-bottom: 25px;
+			border-bottom: 3px black solid;
+		}
+
+		span {
+			color: $red;
+		}
+		margin-top: 55px;
+		text-align: center;
+		&-icon {
+			text-align: center;
+			width: 100px;
+			height: 100px;
+		}
+	}
+}
+
+
+/* Footer */ 
+
+.footer {
+	height: 360px;
+	background-color: #380202;
+
+	&-header {
+		margin-bottom: 25px;	
+		text-align: center;
+		h3 {
+			font-family: 'Franklin Gothic Heavy';
+		    text-transform: uppercase;
+	        color: $white;
+			line-height: 90px;
+			font-size: 60px;
+		}
+	}
+	&-box {
+		margin-top: 15px;
+		text-align: center;
+		&-button {
+            text-align: center;
+			font-family: 'Tahoma';
+			font-weight: 700;
+			text-transform: uppercase;
+			color: $white;
+			font-size: 30px;
+			padding-left: 20px;
+			padding-right: 20px;
+			padding-top: 15px;
+			padding-bottom: 15px;
+			background-color: $black;
+			border: 3px $white solid;
+			border-radius: 10px;
+			&:hover {
+				border-color:  $black;
+				text-decoration: none;
+				color: $black;
+				background-color: $white;
+				transition: all 0.5s;
+			}
+		}
+	}
+	&-logo {
+		&-box {
+			
+			padding-left: 65px;
+		}
+		margin-top: 5px;
+		&-text {
+			font-family: 'Rockwell-ExtraBold', sans-serif;
+	        font-weight: 900;
+	        text-shadow:
+			-1px -1px 0 #000,
+			1px -1px 0 #000,
+			-1px 1px 0 #000,
+			1px 1px 0 #000;
+	        color: #380202;
+	        font-size: 60px;
+	        
+		}
+		&:hover {
+	        	text-decoration: none;
+	        }
+	}
+	&-contacts {
+		&-link {
+			color: $white;
+			font-size: 24px;
+			&:hover {
+				text-decoration: none;
+				color: $white;
+			}
+			&-info {
+				margin-top: 30px;
+			}
+		}
+	}
+}
+
+
+.foot-logo {
+	width: 145px;
+	height: 125px;
+	margin-top: 60px;
+	margin-left: 50px;
+}
+
+.consultation {
+&-dialog {
+		margin: 100px 30%;
+	}
+	&-closebutton {
+		width: 45px;
+		height: 45px;
+	}
+
+	&-header {
+		border:none;
+	}
+
+	&-footer {
+		border: none;
+	}
+	&-content {
+		width: 40vw;
+		height: 600px;
+		background: url("../img/consult.jpg") no-repeat center center scroll;
+        background-size: cover;
+	}
+
+	&-box {
+    	margin-top: 160px;
+    	width: 310px;
+    	height: 500px;
+    	background-color: #fff;
+
+    	&-h {
+    		letter-spacing: 1px;
+    		font-family: 'Corbel';
+    		text-transform: uppercase;
+    		margin-bottom: 25px;
+    		text-align: center;
+    		font-size: 30px;
+    		font-weight: 500;
+    		color: $black;
+    	}
+
+    	&-row {
+    		text-align: center;
+    		margin-bottom: 40px;
+    	}
+
+    	&-item {
+    		font-family: 'Corbel';
+    		font-weight: 400;
+    		border: 4px #000 solid;
+    		background-color: #800e0e;
+    		font-size: 18px;
+    		color: #000;
+    		width: 320px;
+    		height: 60px;
+    		padding-left: 10px;
+    		&:focus {
+    			background-color: #faffbd;
+    			&::placeholder {
+    				-webkit-transition: all 0.4s ease 0s;
+    			-o-transition: all 0.4s ease 0s;
+    			transition: all 0.4s ease 0s;
+    				color: $black;
+    				padding-left: 0px;
+    			}
+    			text-decoration: none;
+    			padding-left: 10px;
+
+    			
+    		}
+    		&::placeholder {
+    			
+    			font-size: 20px;
+    			font-weight: 100;
+    		}
+    	}
+
+    	&-button {
+    		background-color: #800e0e;
+    		border: 4px #000 solid;
+    		color: $black;
+    		font-weight: 500;
+    		font-size: 24px;
+    		width: 225px;
+    		margin-top: 30px;
+    		height: 50px;
+    		&:hover {
+    			background-color: #800e0e;
+    			color: $white;
+    			-webkit-transition: all 0.4s ease 0s;
+                -moz-transition: all 0.4s ease 0s;
+                -ms-transition: all 0.4s ease 0s;
+                -o-transition: all 0.4s ease 0s;
+                transition: all 0.4s ease 0s;
+    		}
+    	}
+    }
+}
+
+
+
+.sitedevelop {
+	&-arrow {
+		width: 100px;
+		height: 30px;
+		display: block;
+		vertical-align: middle;
+		float: left;
+	}
+
+	&-text {
+		margin-bottom: 30px;
+		font-family: 'Bookman Old Style';
+		font-weight: 400;
+		font-size: 18px;
+		color: $white;
+		text-transform: uppercase;
+	}
+	&-dialog {
+		margin: 100px 20%;
+	}
+	&-closebutton {
+		width: 45px;
+		height: 45px;
+	}
+
+	&-header {
+		margin-left: auto;
+		margin-right: auto;
+		color: $white;
+		border:none;
+		h3 {
+			font-family: 'Bookman Old Style';
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 28px;
+		}
+		
+		&-text {
+			margin-left: 20px;
+			font-family: 'Bookman Old Style';
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 26px;
+			color: $red;
+			
+		}
+	}
+
+	&-footer {
+		border: none;
+	}
+	&-content {
+		width: 60vw;
+		height: 90vh;
+		background: url("../img/site-develop-bg.jpg") no-repeat center center scroll;
+        background-size: cover;
+        opacity: 0.812;
+        background-color: #000;
+	}
+
+	&-box {
+    	margin-top: 160px;
+    	width: 310px;
+    	height: 500px;
+    	background-color: #fff;
+
+    	&-h {
+    		letter-spacing: 1px;
+    		font-family: 'Corbel';
+    		text-transform: uppercase;
+    		margin-bottom: 25px;
+    		text-align: center;
+    		font-size: 30px;
+    		font-weight: 500;
+    		color: $black;
+    	}
+
+    	&-row {
+    		text-align: center;
+    		margin-bottom: 40px;
+    	}
+
+    	&-item {
+    		font-family: 'Corbel';
+    		font-weight: 400;
+    		border: 4px #000 solid;
+    		background-color: #800e0e;
+    		font-size: 18px;
+    		color: #000;
+    		width: 320px;
+    		height: 60px;
+    		padding-left: 10px;
+    		&:focus {
+
+    			&::placeholder {
+    				-webkit-transition: all 0.4s ease 0s;
+    			-o-transition: all 0.4s ease 0s;
+    			transition: all 0.4s ease 0s;
+    				color: $white;
+    				padding-left: 0px;
+    			}
+    			text-decoration: none;
+    			padding-left: 10px;
+
+    			
+    		}
+    		&::placeholder {
+    			
+    			font-size: 20px;
+    			font-weight: 100;
+    		}
+    	}
+
+    	&-button {
+    		background-color: #800e0e;
+    		border: 4px #000 solid;
+    		color: $black;
+    		font-weight: 500;
+    		font-size: 24px;
+    		width: 225px;
+    		margin-top: 30px;
+    		height: 50px;
+    		&:hover {
+    			background-color: #800e0e;
+    			color: $white;
+    			-webkit-transition: all 0.4s ease 0s;
+                -moz-transition: all 0.4s ease 0s;
+                -ms-transition: all 0.4s ease 0s;
+                -o-transition: all 0.4s ease 0s;
+                transition: all 0.4s ease 0s;
+    		}
+    	}
+    }
+}
+
+
+
+.seosmm {
+
+	&-arrow {
+		width: 120px;
+		height: 50px;
+		display: block;
+		float: left;
+	}
+	&-text {
+		margin-left: 90px;
+		margin-bottom: 30px;
+		font-family: 'Bookman Old Style';
+		font-weight: 400;
+		font-size: 18px;
+		color: $white;
+		text-transform: uppercase;
+	}
+
+	&-dialog {
+		margin: 100px 10%;
+	}
+	&-closebutton {
+		width: 45px;
+		height: 45px;
+	}
+
+	&-header {
+		margin-left: auto;
+		margin-right: auto;
+		color: $white;
+		border:none;
+		h3 {
+			font-family: 'Bookman Old Style';
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 48px;
+		}
+		
+		&-text {
+			font-family: 'Bookman Old Style';
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 48px;
+			color: $red;
+			margin-left: 140px;
+		}
+	}
+
+	&-footer {
+		border: none;
+	}
+	&-content {
+		width: 80vw;
+		height: 800px;
+		background: url("../img/seosmm-bg.jpg") no-repeat center center scroll;
+        background-size: cover;
+        opacity: 0.812;
+        background-color: #000;
+	}
+
+	&-box {
+    	margin-top: 160px;
+    	width: 310px;
+    	height: 500px;
+    	background-color: #fff;
+
+    	&-h {
+    		letter-spacing: 1px;
+    		font-family: 'Corbel';
+    		text-transform: uppercase;
+    		margin-bottom: 25px;
+    		text-align: center;
+    		font-size: 30px;
+    		font-weight: 500;
+    		color: $black;
+    	}
+
+    	&-row {
+    		text-align: center;
+    		margin-bottom: 40px;
+    	}
+
+    	&-item {
+    		font-family: 'Corbel';
+    		font-weight: 400;
+    		border: 4px #000 solid;
+    		background-color: #800e0e;
+    		font-size: 18px;
+    		color: #000;
+    		width: 320px;
+    		height: 60px;
+    		padding-left: 10px;
+    		&:focus {
+
+    			&::placeholder {
+    				-webkit-transition: all 0.4s ease 0s;
+    			-o-transition: all 0.4s ease 0s;
+    			transition: all 0.4s ease 0s;
+    				color: $white;
+    				padding-left: 0px;
+    			}
+    			text-decoration: none;
+    			padding-left: 10px;
+
+    			
+    		}
+    		&::placeholder {
+    			
+    			font-size: 20px;
+    			font-weight: 100;
+    		}
+    	}
+
+    	&-button {
+    		background-color: #800e0e;
+    		border: 4px #000 solid;
+    		color: $black;
+    		font-weight: 500;
+    		font-size: 24px;
+    		width: 225px;
+    		margin-top: 30px;
+    		height: 50px;
+    		&:hover {
+    			background-color: #800e0e;
+    			color: $white;
+    			-webkit-transition: all 0.4s ease 0s;
+                -moz-transition: all 0.4s ease 0s;
+                -ms-transition: all 0.4s ease 0s;
+                -o-transition: all 0.4s ease 0s;
+                transition: all 0.4s ease 0s;
+    		}
+    	}
+    }
+}
+
+.close {
+	position: absolute;
+	top: 2%;
+	left: 87%;
+}
+
+
+.bonus {
+
+	&-dialog {
+		margin: 100px 10%;
+	}
+	&-closebutton {
+		width: 45px;
+		height: 45px;
+	}
+
+	&-header {
+		margin-left:auto;
+		margin-right: auto;
+		
+		border:none;
+		h3 {
+			color: $red;
+		font-family: 'Bookman Old Style';
+		font-weight: 700;
+		text-transform: uppercase;
+		font-size: 72px;
+		}
+		&-text {
+			text-align: center;
+			font-family: 'Bookman Old Style';
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 30px;
+			color: $white;
+			padding-bottom: 30px;
+			&-red {
+				color: $red;
+		}
+		span {
+			color: $red;
+		}
+	}
+}
+	&-footer {
+		border: none;
+	}
+	&-content {
+		width: 80vw;
+		height: 800px;
+		background: url("../img/bonus-bg.jpg") no-repeat center center scroll;
+        background-size: cover;
+        opacity: 0.812;
+        background-color: #000;
+	}
+
+	&-box {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 35px;
+    	width: 585px;
+    	height: 260px;
+    	background-color: $black;
+    	border: 3px #545050 solid;
+    	-webkit-border-radius: 10px;
+    	-moz-border-radius: 10px;
+    	-ms-border-radius: 10px;
+    	-o-border-radius: 10px;
+    	border-radius: 10px;
+
+
+    	&-plus {
+    		line-height: 0px;
+    		text-align: center;
+    		font-family: 'Bookman Old Style';
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 30px;
+    		color: $white;
+    	}
+    	&-text {
+    		line-height: 40px;
+    		text-align: center;
+    		font-family: 'Bookman Old Style';
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 30px;
+    		color: $white;
+
+    		&-red {
+    			color:$red;
+    		}
+
+
+    	}
+    	&-button {
+    		background-color: #800e0e;
+    		border: 4px #000 solid;
+    		color: $black;
+    		font-weight: 500;
+    		font-size: 24px;
+    		width: 225px;
+    		margin-top: 30px;
+    		height: 50px;
+    		&:hover {
+    			background-color: #800e0e;
+    			color: $white;
+    			-webkit-transition: all 0.4s ease 0s;
+                -moz-transition: all 0.4s ease 0s;
+                -ms-transition: all 0.4s ease 0s;
+                -o-transition: all 0.4s ease 0s;
+                transition: all 0.4s ease 0s;
+    		}
+    	}
+    }
+}
+
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	display: none;
+	pointer-events: none;
+}
+
+
+
+
+
+
+/* responsive */
+
+
+@media (max-width: 320px) {
+
+
+.bonus {
+
+	&-dialog {
+		margin: 0 0;
+	}
+	&-closebutton {
+		width: 25px;
+		height: 25px;
+	}
+
+	&-header {
+		
+		margin-bottom: 20px;
+		border:none;
+		h3 {
+			color: $red;
+		font-family: 'Bookman Old Style';
+		font-weight: 700;
+		text-transform: uppercase;
+		font-size: 32px;
+		margin-bottom: 20px;
+		}
+		&-text {
+			text-align: center;
+			font-family: 'Bookman Old Style';
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 22px;
+			color: $white;
+			padding-bottom: 30px;
+			&-red {
+				color: $red;
+		}
+		span {
+			color: $red;
+		}
+	}
+}
+	&-footer {
+		border: none;
+	}
+	&-content {
+		width: 100vw;
+		height: 800px;
+		background: url("../img/seosmm-bg.jpg") no-repeat center center scroll;
+        background-size: cover;
+        opacity: 0.812;
+        background-color: #000;
+	}
+
+	&-box {
+		margin-left: auto;
+		margin-bottom: 35px;
+    	width: 285px;
+    	height: 400px;
+    	background-color: $black;
+    	border: 3px #545050 solid;
+    	-webkit-border-radius: 10px;
+    	-moz-border-radius: 10px;
+    	-ms-border-radius: 10px;
+    	-o-border-radius: 10px;
+    	border-radius: 10px;
+
+
+    	&-plus {
+    		line-height: 0px;
+    		text-align: center;
+    		font-family: 'Bookman Old Style';
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 24px;
+    		color: $white;
+    	}
+    	&-text {
+    		line-height: 40px;
+    		text-align: center;
+    		font-family: 'Bookman Old Style';
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 26px;
+    		color: $white;
+
+    		&-red {
+    			color:$red;
+    		}
+
+
+    	}
+    	&-button {
+    		background-color: #800e0e;
+    		border: 4px #000 solid;
+    		color: $black;
+    		font-weight: 500;
+    		font-size: 24px;
+    		width: 225px;
+    		margin-top: 30px;
+    		height: 50px;
+    		&:hover {
+    			background-color: #800e0e;
+    			color: $white;
+    			-webkit-transition: all 0.4s ease 0s;
+                -moz-transition: all 0.4s ease 0s;
+                -ms-transition: all 0.4s ease 0s;
+                -o-transition: all 0.4s ease 0s;
+                transition: all 0.4s ease 0s;
+    		}
+    	}
+    }
+}
+
+.navbar-collapse {
+	
+	text-align: center;
+}
+
+.nav-item {
+	margin: auto;
+	width: 100%;
+	text-align: center;
+	height: inherit;
+	font-size: 18px;
+	background-color: #000;
+
+	&:hover {
+		color: $red;
+		background-color: $white;
+	}
+}
+
+
+.sitedevelop {
+	&-body {
+		width: 100vw;
+	}
+	&-arrow {
+		width: 70px;
+		height: 30px;
+		display: block;
+		vertical-align: middle;
+		float: left;
+	}
+
+	&-text {
+		
+		
+		margin-bottom: 30px;
+		font-family: 'Bookman Old Style';
+		font-weight: 400;
+		font-size: 14px;
+		color: $white;
+		text-transform: uppercase;
+	}
+	&-dialog {
+		margin: 0 0;
+	}
+	&-closebutton {
+		width: 25px;
+		height: 25px;
+	}
+
+	&-header {
+		margin-left: auto;
+		margin-right: auto;
+		color: $white;
+		border:none;
+		h3 {
+			font-family: 'Bookman Old Style';
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 20px;
+		}
+		
+		&-text {
+			text-align: center;
+			font-family: 'Bookman Old Style';
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 18px;
+			color: $red;
+			
+		}
+	}
+
+	&-footer {
+		border: none;
+	}
+	&-content {
+		width: 100vw;
+		height: 100vh;
+		background: url("../img/site-develop-bg.jpg") no-repeat center center scroll;
+        background-size: cover;
+        opacity: 0.812;
+        background-color: #000;
+	}
+
+	&-box {
+    	
+    	width: 100vw;
+    	height: 500px;
+    	background-color: #fff;
+
+    	&-h {
+    		letter-spacing: 1px;
+    		font-family: 'Corbel';
+    		text-transform: uppercase;
+    		margin-bottom: 25px;
+    		text-align: center;
+    		font-size: 22px;
+    		font-weight: 500;
+    		color: $black;
+    	}
+
+    	&-row {
+    		text-align: center;
+    		margin-bottom: 40px;
+    	}
+
+    	&-item {
+    		font-family: 'Corbel';
+    		font-weight: 400;
+    		border: 4px #000 solid;
+    		background-color: #800e0e;
+    		font-size: 18px;
+    		color: #000;
+    		width: 320px;
+    		height: 60px;
+    		padding-left: 10px;
+    		&:focus {
+
+    			&::placeholder {
+    				-webkit-transition: all 0.4s ease 0s;
+    			-o-transition: all 0.4s ease 0s;
+    			transition: all 0.4s ease 0s;
+    				color: $white;
+    				padding-left: 0px;
+    			}
+    			text-decoration: none;
+    			padding-left: 10px;
+
+    			
+    		}
+    		&::placeholder {
+    			
+    			font-size: 20px;
+    			font-weight: 100;
+    		}
+    	}
+
+    	&-button {
+    		background-color: #800e0e;
+    		border: 4px #000 solid;
+    		color: $black;
+    		font-weight: 500;
+    		font-size: 24px;
+    		width: 225px;
+    		margin-top: 30px;
+    		height: 50px;
+    		&:hover {
+    			background-color: #800e0e;
+    			color: $white;
+    			-webkit-transition: all 0.4s ease 0s;
+                -moz-transition: all 0.4s ease 0s;
+                -ms-transition: all 0.4s ease 0s;
+                -o-transition: all 0.4s ease 0s;
+                transition: all 0.4s ease 0s;
+    		}
+    	}
+    }
+}
+
+
+
+.seosmm {
+
+	&-arrow {
+		width: 70px;
+		height: 30px;
+		display: block;
+		float: left;
+	}
+	&-text {
+		margin-left: 0;
+		margin-bottom: 30px;
+		font-family: 'Bookman Old Style';
+		font-weight: 400;
+		font-size: 14px;
+		color: $white;
+		text-transform: uppercase;
+	}
+
+	&-dialog {
+		margin: 0 0;
+	}
+	&-closebutton {
+		width: 25px;
+		height: 25px;
+	}
+
+	&-header {
+		margin-left: auto;
+		margin-right: auto;
+		color: $white;
+		border:none;
+		h3 {
+			font-family: 'Bookman Old Style';
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 26px;
+		}
+		
+		&-text {
+			font-family: 'Bookman Old Style';
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 24px;
+			color: $red;
+			margin-left: 70px;	
+		}
+	}
+
+	&-footer {
+		border: none;
+	}
+	&-content {
+		width: 100vw;
+		height: 100vh;
+		background: url("../img/seosmm-bg.jpg") no-repeat center center scroll;
+        background-size: cover;
+        opacity: 0.812;
+        background-color: #000;
+	}
+
+	&-box {
+    	
+    	width: 310px;
+    	height: 500px;
+    	background-color: #fff;
+
+    	&-h {
+    		letter-spacing: 1px;
+    		font-family: 'Corbel';
+    		text-transform: uppercase;
+    		margin-bottom: 25px;
+    		text-align: center;
+    		font-size: 30px;
+    		font-weight: 500;
+    		color: $black;
+    	}
+
+    	&-row {
+    		text-align: center;
+    		margin-bottom: 40px;
+    	}
+
+    	&-item {
+    		font-family: 'Corbel';
+    		font-weight: 400;
+    		border: 4px #000 solid;
+    		background-color: #800e0e;
+    		font-size: 18px;
+    		color: #000;
+    		width: 320px;
+    		height: 60px;
+    		
+    		&:focus {
+
+    			&::placeholder {
+    				-webkit-transition: all 0.4s ease 0s;
+    			-o-transition: all 0.4s ease 0s;
+    			transition: all 0.4s ease 0s;
+    				color: $white;
+    				padding-left: 0px;
+    			}
+    			text-decoration: none;
+    			padding-left: 10px;
+
+    			
+    		}
+    		&::placeholder {
+    			
+    			font-size: 20px;
+    			font-weight: 100;
+    		}
+    	}
+
+    	&-button {
+    		background-color: #800e0e;
+    		border: 4px #000 solid;
+    		color: $black;
+    		font-weight: 500;
+    		font-size: 24px;
+    		width: 225px;
+    		margin-top: 30px;
+    		height: 50px;
+    		&:hover {
+    			background-color: #800e0e;
+    			color: $white;
+    			-webkit-transition: all 0.4s ease 0s;
+                -moz-transition: all 0.4s ease 0s;
+                -ms-transition: all 0.4s ease 0s;
+                -o-transition: all 0.4s ease 0s;
+                transition: all 0.4s ease 0s;
+    		}
+    	}
+    }
+}
+
+.consultation {
+&-dialog {
+		margin: 0 0 ;
+	}
+	&-closebutton {
+		width: 25px;
+		height: 25px;
+	}
+
+	&-header {
+		border:none;
+	}
+
+	&-footer {
+		border: none;
+	}
+	&-content {
+		width: 100vw;
+		height: 100vh;
+		background: url("../img/consult.jpg") no-repeat center center scroll;
+        background-size: cover;
+	}
+
+	&-box {
+    	margin-top: 160px;
+    	width: 100vw;
+    	height: 700px;
+    	background-color: #fff;
+
+    	&-h {
+    		letter-spacing: 1px;
+    		font-family: 'Corbel';
+    		text-transform: uppercase;
+    		margin-bottom: 25px;
+    		text-align: center;
+    		font-size: 30px;
+    		font-weight: 500;
+    		color: $black;
+    	}
+
+    	&-row {
+    		text-align: center;
+    		margin-bottom: 40px;
+    	}
+
+    	&-item {
+    		font-family: 'Corbel';
+    		font-weight: 400;
+    		border: 4px #000 solid;
+    		background-color: #800e0e;
+    		font-size: 18px;
+    		color: #000;
+    		width: 270px;
+    		height: 60px;
+    		padding-left: 10px;
+    		&:focus {
+
+    			&::placeholder {
+    				-webkit-transition: all 0.4s ease 0s;
+    			-o-transition: all 0.4s ease 0s;
+    			transition: all 0.4s ease 0s;
+    				color: $white;
+    				padding-left: 0px;
+    			}
+    			text-decoration: none;
+    			padding-left: 10px;
+
+    			
+    		}
+    		&::placeholder {
+    			
+    			font-size: 20px;
+    			font-weight: 100;
+    		}
+    	}
+
+    	&-button {
+    		background-color: #800e0e;
+    		border: 4px #000 solid;
+    		color: $black;
+    		font-weight: 500;
+    		font-size: 24px;
+    		width: 225px;
+    		margin-top: 30px;
+    		height: 50px;
+    		&:hover {
+    			background-color: #800e0e;
+    			color: $white;
+    			-webkit-transition: all 0.4s ease 0s;
+                -moz-transition: all 0.4s ease 0s;
+                -ms-transition: all 0.4s ease 0s;
+                -o-transition: all 0.4s ease 0s;
+                transition: all 0.4s ease 0s;
+    		}
+    	}
+    }
+}
+
+
+	.nav-logo {
+		width: 70;
+		height: 45px;
+	}
+
+	.logo-text {
+		font-size: 24px;
+	}
+	.header h1 {
+		font-size: 30px;
+		text-align: center;
+		margin-top: 100px;
+	}
+	.header-subline {
+		margin-top: 15px;
+		padding-left: 15px;
+		font-size: 18px;
+		text-align: center;
+	}
+	
+.header {
+	height: 130vh;
+    &-list {
+    	&-box {
+    		margin-left: auto;
+    		margin-right: auto;
+    		width: 100%;
+    	}
+    	&-under {
+    		font-family: 'Georgia';
+    		color: $red;
+    		font-size: 20px;
+    		position: relative;
+    	    margin-left: 0;
+    	    width: 200px;
+    	}
+    	position: relative;
+    	margin-left: 0;
+    	margin-top: 30px;
+    	font-family: 'Georgia';
+    	font-size: 20px;
+    	color: $white;
+
+    	&-item {
+    		position: relative;
+    		margin-bottom: 10px;
+    	}
+    }
+
+    &-button {
+    	margin-left: auto;
+    	margin-right: auto;
+    	background-color: #800e0e;
+    	display: block;
+    	border: 5px $black solid;
+    	text-align: center;
+    	font-family: 'Georgia';
+    	width: 205px;
+    	height: 50px;
+    	text-transform: uppercase;
+    	text-decoration: none;
+    	font-size: 24px;
+    	color: $white;
+    	&:hover {
+    		text-decoration: none;
+    		color: $white;
+    		background-color: $dark-red;
+    	}
+    }
+
+    &-bonus{
+    	margin-left: auto;
+    		margin-right: auto;
+    	&-text {
+
+    	font-family: 'ITC Franklin Gothic Medium';
+    	font-size: 24px;
+    	color: $white;
+    	margin-bottom: 0;
+    }
+    	span {
+    		margin-left: 150px;
+    		font-family: 'ITC Franklin Gothic Medium';
+    		text-transform: uppercase;
+    		color: $black;
+    		font-size: 24px;
+    	}	
+    }
+}
+
+	#sitedevelopment {
+		height: 2550px;
+	}
+	.sitedevelopment-header {
+		margin-top: 30px;
+	}
+	.sitedevelopment-box-image {
+		margin-left: 0px;
+		width: 140px;
+		height: 140px;
+	}
+	.sitedevelopment-box-bg {
+		
+		margin-top: -120px;
+		height: 700px;
+		width: 100%;
+	}
+
+	.sitedevelopment-box-button {
+		width: 150px;
+	}
+
+	.sitedevelopment-box h3 {
+		font-size: 16px;
+		padding-top: 155px;
+	}
+	.sitedevelopment-box h4 {
+		font-size: 18px;
+		margin-top: 10px;
+		padding-bottom: 20px;
+	}
+	.date {
+		margin-bottom: 20px;
+	}
+	.sitedevelopment-box-area {
+		margin-bottom: 25px;
+		width: inherit;
+	}
+	.sitedevelopment-box-link {
+		font-size: 18px;
+	}
+	.sitedevelopment-box-2 {
+		
+	}
+	.sitedevelopment-box-ultro h3 {
+		padding-bottom: 10px;
+	}
+
+	.smm {
+		height: 1800px;
+	}
+
+	.smm-box {
+		
+	}
+	.smm-box-bg {
+		margin-top: -140px;
+		width: 100%;
+	}
+	.smm-box h3 {
+		padding-top: 130px;
+		font-size: 18px;
+	}
+	.smm-box p {
+		font-size: 16px;
+	}
+	.smm-box-image {
+		
+		width: 140px;
+		height: 140px;
+	}
+	.smm-box-button {
+		margin-top: 15px;
+		width: 90%;
+	}
+	.smm-box-area {
+		margin-bottom: 25px;
+		width: inherit;
+	}
+	.smm-box-link {
+		font-size: 18px;
+		margin-bottom: 10px;
+	}
+
+	.case {
+		height: 2700px;
+	}
+	.case-box h3{
+		font-size: 16px;
+	}
+	.case-box-plus {
+		width: 20px;
+		height: 20px;
+	}
+	.case-box-bg {
+		width: 100%;
+	}
+	.case-box-button {
+		width: 280px;
+	}
+	.case-box-block {
+		margin-top: 60px;
+	}
+
+	.sunduk-side, .sunduk-center {
+		width: 180px;
+		height: 180px;
+		margin-left: 20px;
+	}
+
+	.features {
+		height: 2290px;
+	}
+
+	.notebook{
+	&-image {
+	height: 1200px;
+	background: url("../img/notebook-image.jpg") no-repeat center center scroll;
+    background-size: cover;
+   
+  }
+    &-header {
+    	text-align: center;
+    	margin-top: 50px;
+    	&-text {
+    		font-family: 'Century Schoolbook';
+			font-weight: 400;
+			color: $white;
+			font-size: 24px;
+    	}
+    }
+    &-quote {
+    	font-family: 'Century Schoolbook';
+			font-weight: 400;
+			color: $white;
+			font-size: 18px;
+    }
+    &-box {
+
+    	&-text {
+    		font-family: 'ITC Franklin Gothic Medium';
+			font-weight: 400;
+			color: $white;
+			font-size: 16px;
+    	}
+    	&-image {
+    		width: 450px;
+    		height: 670px;
+    	}
+    }
+}
+
+	.footer {
+		height: 660px;
+	}
+	.footer-header {
+		margin-bottom: 10px;
+	}
+	.footer-header h3 {
+		line-height: 60px;
+		font-size: 40px;
+	}
+	.footer-contacts {
+		text-align: center;
+	}
+	.footer-box-button {
+		font-size: 24px;
+	}
+	.footer-logo-box {
+		text-align: center;
+		padding-left: 15px;
+	}
+}
+
+@media (min-width: 321px) and (max-width:420px){
+
+.bonus {
+
+	&-dialog {
+		margin: 0 0;
+	}
+	&-closebutton {
+		width: 25px;
+		height: 25px;
+	}
+
+	&-header {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 20px;
+		border:none;
+		h3 {
+			color: $red;
+		font-family: 'Bookman Old Style';
+		font-weight: 700;
+		text-transform: uppercase;
+		font-size: 32px;
+		margin-bottom: 20px;
+		}
+		&-text {
+			text-align: center;
+			font-family: 'Bookman Old Style';
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 22px;
+			color: $white;
+			padding-bottom: 30px;
+			&-red {
+				color: $red;
+		}
+		span {
+			color: $red;
+		}
+	}
+}
+	&-footer {
+		border: none;
+	}
+	&-content {
+		width: 100vw;
+		height: 800px;
+		background: url("../img/seosmm-bg.jpg") no-repeat center center scroll;
+        background-size: cover;
+        opacity: 0.812;
+        background-color: #000;
+	}
+
+	&-box {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 35px;
+    	width: 285px;
+    	height: 400px;
+    	background-color: $black;
+    	border: 3px #545050 solid;
+    	-webkit-border-radius: 10px;
+    	-moz-border-radius: 10px;
+    	-ms-border-radius: 10px;
+    	-o-border-radius: 10px;
+    	border-radius: 10px;
+
+
+    	&-plus {
+    		line-height: 0px;
+    		text-align: center;
+    		font-family: 'Bookman Old Style';
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 24px;
+    		color: $white;
+    	}
+    	&-text {
+    		line-height: 40px;
+    		text-align: center;
+    		font-family: 'Bookman Old Style';
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 26px;
+    		color: $white;
+
+    		&-red {
+    			color:$red;
+    		}
+
+
+    	}
+    	&-button {
+    		background-color: #800e0e;
+    		border: 4px #000 solid;
+    		color: $black;
+    		font-weight: 500;
+    		font-size: 24px;
+    		width: 225px;
+    		margin-top: 30px;
+    		height: 50px;
+    		&:hover {
+    			background-color: #800e0e;
+    			color: $white;
+    			-webkit-transition: all 0.4s ease 0s;
+                -moz-transition: all 0.4s ease 0s;
+                -ms-transition: all 0.4s ease 0s;
+                -o-transition: all 0.4s ease 0s;
+                transition: all 0.4s ease 0s;
+    		}
+    	}
+    }
+}
+
+
+.sitedevelop {
+	&-body {
+		width: 100vw;
+	}
+	&-arrow {
+		width: 70px;
+		height: 30px;
+		display: block;
+		vertical-align: middle;
+		float: left;
+	}
+
+	&-text {
+		
+		
+		margin-bottom: 30px;
+		font-family: 'Bookman Old Style';
+		font-weight: 400;
+		font-size: 14px;
+		color: $white;
+		text-transform: uppercase;
+	}
+	&-dialog {
+		margin: 0 0;
+	}
+	&-closebutton {
+		width: 25px;
+		height: 25px;
+	}
+
+	&-header {
+		margin-left: auto;
+		margin-right: auto;
+		color: $white;
+		border:none;
+		h3 {
+			font-family: 'Bookman Old Style';
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 20px;
+		}
+		
+		&-text {
+			text-align: center;
+			font-family: 'Bookman Old Style';
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 18px;
+			color: $red;
+			
+		}
+	}
+
+	&-footer {
+		border: none;
+	}
+	&-content {
+		width: 100vw;
+		height: 100vh;
+		background: url("../img/site-develop-bg.jpg") no-repeat center center scroll;
+        background-size: cover;
+        opacity: 0.812;
+        background-color: #000;
+	}
+
+	&-box {
+    	
+    	width: 100vw;
+    	height: 500px;
+    	background-color: #fff;
+
+    	&-h {
+    		letter-spacing: 1px;
+    		font-family: 'Corbel';
+    		text-transform: uppercase;
+    		margin-bottom: 25px;
+    		text-align: center;
+    		font-size: 22px;
+    		font-weight: 500;
+    		color: $black;
+    	}
+
+    	&-row {
+    		text-align: center;
+    		margin-bottom: 40px;
+    	}
+
+    	&-item {
+    		font-family: 'Corbel';
+    		font-weight: 400;
+    		border: 4px #000 solid;
+    		background-color: #800e0e;
+    		font-size: 18px;
+    		color: #000;
+    		width: 320px;
+    		height: 60px;
+    		padding-left: 10px;
+    		&:focus {
+
+    			&::placeholder {
+    				-webkit-transition: all 0.4s ease 0s;
+    			-o-transition: all 0.4s ease 0s;
+    			transition: all 0.4s ease 0s;
+    				color: $white;
+    				padding-left: 0px;
+    			}
+    			text-decoration: none;
+    			padding-left: 10px;
+
+    			
+    		}
+    		&::placeholder {
+    			
+    			font-size: 20px;
+    			font-weight: 100;
+    		}
+    	}
+
+    	&-button {
+    		background-color: #800e0e;
+    		border: 4px #000 solid;
+    		color: $black;
+    		font-weight: 500;
+    		font-size: 24px;
+    		width: 225px;
+    		margin-top: 30px;
+    		height: 50px;
+    		&:hover {
+    			background-color: #800e0e;
+    			color: $white;
+    			-webkit-transition: all 0.4s ease 0s;
+                -moz-transition: all 0.4s ease 0s;
+                -ms-transition: all 0.4s ease 0s;
+                -o-transition: all 0.4s ease 0s;
+                transition: all 0.4s ease 0s;
+    		}
+    	}
+    }
+}
+
+
+
+.seosmm {
+
+	&-arrow {
+		width: 70px;
+		height: 30px;
+		display: block;
+		float: left;
+	}
+	&-text {
+		margin-left: 0;
+		margin-bottom: 30px;
+		font-family: 'Bookman Old Style';
+		font-weight: 400;
+		font-size: 14px;
+		color: $white;
+		text-transform: uppercase;
+	}
+
+	&-dialog {
+		margin: 0 0;
+	}
+	&-closebutton {
+		width: 25px;
+		height: 25px;
+	}
+
+	&-header {
+		margin-left: auto;
+		margin-right: auto;
+		color: $white;
+		border:none;
+		h3 {
+			font-family: 'Bookman Old Style';
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 26px;
+		}
+		
+		&-text {
+			font-family: 'Bookman Old Style';
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 24px;
+			color: $red;
+			margin-left: 70px;	
+		}
+	}
+
+	&-footer {
+		border: none;
+	}
+	&-content {
+		width: 100vw;
+		height: 100vh;
+		background: url("../img/seosmm-bg.jpg") no-repeat center center scroll;
+        background-size: cover;
+        opacity: 0.812;
+        background-color: #000;
+	}
+
+	&-box {
+    	
+    	width: 310px;
+    	height: 500px;
+    	background-color: #fff;
+
+    	&-h {
+    		letter-spacing: 1px;
+    		font-family: 'Corbel';
+    		text-transform: uppercase;
+    		margin-bottom: 25px;
+    		text-align: center;
+    		font-size: 30px;
+    		font-weight: 500;
+    		color: $black;
+    	}
+
+    	&-row {
+    		text-align: center;
+    		margin-bottom: 40px;
+    	}
+
+    	&-item {
+    		font-family: 'Corbel';
+    		font-weight: 400;
+    		border: 4px #000 solid;
+    		background-color: #800e0e;
+    		font-size: 18px;
+    		color: #000;
+    		width: 320px;
+    		height: 60px;
+    		
+    		&:focus {
+
+    			&::placeholder {
+    				-webkit-transition: all 0.4s ease 0s;
+    			-o-transition: all 0.4s ease 0s;
+    			transition: all 0.4s ease 0s;
+    				color: $white;
+    				padding-left: 0px;
+    			}
+    			text-decoration: none;
+    			padding-left: 10px;
+
+    			
+    		}
+    		&::placeholder {
+    			
+    			font-size: 20px;
+    			font-weight: 100;
+    		}
+    	}
+
+    	&-button {
+    		background-color: #800e0e;
+    		border: 4px #000 solid;
+    		color: $black;
+    		font-weight: 500;
+    		font-size: 24px;
+    		width: 225px;
+    		margin-top: 30px;
+    		height: 50px;
+    		&:hover {
+    			background-color: #800e0e;
+    			color: $white;
+    			-webkit-transition: all 0.4s ease 0s;
+                -moz-transition: all 0.4s ease 0s;
+                -ms-transition: all 0.4s ease 0s;
+                -o-transition: all 0.4s ease 0s;
+                transition: all 0.4s ease 0s;
+    		}
+    	}
+    }
+}
+
+.consultation {
+&-dialog {
+		margin: 0 0 ;
+	}
+	&-closebutton {
+		width: 25px;
+		height: 25px;
+	}
+
+	&-header {
+		border:none;
+	}
+
+	&-footer {
+		border: none;
+	}
+	&-content {
+		width: 100vw;
+		height: 100vh;
+		background: url("../img/consult.jpg") no-repeat center center scroll;
+        background-size: cover;
+	}
+
+	&-box {
+    	margin-top: 160px;
+    	width: 310px;
+    	height: 500px;
+    	background-color: #fff;
+
+    	&-h {
+    		letter-spacing: 1px;
+    		font-family: 'Corbel';
+    		text-transform: uppercase;
+    		margin-bottom: 25px;
+    		text-align: center;
+    		font-size: 30px;
+    		font-weight: 500;
+    		color: $black;
+    	}
+
+    	&-row {
+    		text-align: center;
+    		margin-bottom: 40px;
+    	}
+
+    	&-item {
+    		font-family: 'Corbel';
+    		font-weight: 400;
+    		border: 4px #000 solid;
+    		background-color: #800e0e;
+    		font-size: 18px;
+    		color: #000;
+    		width: 320px;
+    		height: 60px;
+    		padding-left: 10px;
+    		&:focus {
+
+    			&::placeholder {
+    				-webkit-transition: all 0.4s ease 0s;
+    			-o-transition: all 0.4s ease 0s;
+    			transition: all 0.4s ease 0s;
+    				color: $white;
+    				padding-left: 0px;
+    			}
+    			text-decoration: none;
+    			padding-left: 10px;
+
+    			
+    		}
+    		&::placeholder {
+    			
+    			font-size: 20px;
+    			font-weight: 100;
+    		}
+    	}
+
+    	&-button {
+    		background-color: #800e0e;
+    		border: 4px #000 solid;
+    		color: $black;
+    		font-weight: 500;
+    		font-size: 24px;
+    		width: 225px;
+    		margin-top: 30px;
+    		height: 50px;
+    		&:hover {
+    			background-color: #800e0e;
+    			color: $white;
+    			-webkit-transition: all 0.4s ease 0s;
+                -moz-transition: all 0.4s ease 0s;
+                -ms-transition: all 0.4s ease 0s;
+                -o-transition: all 0.4s ease 0s;
+                transition: all 0.4s ease 0s;
+    		}
+    	}
+    }
+}
+
+
+
+.navbar-collapse {
+	
+	text-align: center;
+}
+
+.nav-item {
+	margin: auto;
+	width: 100%;
+	text-align: center;
+	height: inherit;
+	font-size: 18px;
+	background-color: #000;
+	&:hover {
+		color: $red;
+		background-color: $white;
+	}
+}
+
+
+.header {
+	height: 140vh;
+    &-list {
+    	&-box {
+    		margin-left: auto;
+    		margin-right: auto;
+    		width: 100%;
+    	}
+    	&-under {
+    		font-family: 'Georgia';
+    		color: $red;
+    		font-size: 26px;
+    		position: relative;
+    	    margin-left: 0;
+    	    width: 240px;
+    	}
+    	position: relative;
+    	margin-left: 20px;
+    	margin-top: 30px;
+    	font-family: 'Georgia';
+    	font-size: 20px;
+    	color: $white;
+
+    	&-item {
+    		position: relative;
+    		margin-bottom: 10px;
+    	}
+    }
+
+    &-button {
+    	margin-left: auto;
+    	margin-right: auto;
+    	background-color: #800e0e;
+    	display: block;
+    	border: 5px $black solid;
+    	text-align: center;
+    	font-family: 'Georgia';
+    	width: 205px;
+    	height: 50px;
+    	text-transform: uppercase;
+    	text-decoration: none;
+    	font-size: 24px;
+    	color: $white;
+    	&:hover {
+    		text-decoration: none;
+    		color: $white;
+    		background-color: $dark-red;
+    	}
+    }
+
+    &-bonus{
+    	margin-left: auto;
+    		margin-right: auto;
+    	&-text {
+
+    	font-family: 'ITC Franklin Gothic Medium';
+    	font-size: 24px;
+    	color: $white;
+    	margin-bottom: 0;
+    }
+    	span {
+    		margin-left: 150px;
+    		font-family: 'ITC Franklin Gothic Medium';
+    		text-transform: uppercase;
+    		color: $black;
+    		font-size: 24px;
+    	}	
+    }
+}
+
+
+	.nav-logo {
+		width: 70;
+		height: 45px;
+	}
+
+	.logo-text {
+		font-size: 24px;
+	}
+	.header h1 {
+		font-size: 30px;
+		text-align: center;
+		margin-top: 100px;
+	}
+	.header-subline {
+		margin-top: 15px;
+		padding-left: 15px;
+		font-size: 18px;
+		text-align: center;
+	}
+
+
+	#sitedevelopment {
+		height: 2350px;
+	}
+
+	.sitedevelopment-header {
+		margin-top: 30px;
+	}
+
+	.sitedevelopment-box-i{
+		text-align: center;
+	}
+	.sitedevelopment-box-image {
+		margin: 0;
+		width: 180px;
+		height: 180px;
+	}
+	.sitedevelopment-box-bg {
+		
+		margin-top: -160px;
+		height: 600px;
+		width: 100%;
+	}
+
+	.sitedevelopment-box h3 {
+		font-size: 18px;
+		padding-top: 155px;
+	}
+	.sitedevelopment-box h4 {
+		font-size: 18px;
+		margin-top: 10px;
+		padding-bottom: 20px;
+	}
+	.date {
+		margin-bottom: 20px;
+	}
+	.sitedevelopment-box-area {
+		margin-bottom: 25px;
+		width: inherit;
+	}
+	.sitedevelopment-box-link {
+		font-size: 18px;
+	}
+	.sitedevelopment-box-2 {
+		
+	}
+	.sitedevelopment-box-ultro h3 {
+		padding-bottom: 10px;
+	}
+
+	.smm {
+		height: 1900px;
+	}
+
+	.smm-box h3{
+		font-size: 20px;
+		
+	}
+	.smm-box-bg {
+		width: 100%;
+		margin-top: -95px;
+	}
+	.smm-box-image {
+		margin: 0;
+		width: 180px;
+		height: 180px;
+	}
+	.smm-box-area {
+		margin-bottom: 25px;
+		width: inherit;
+	}
+	.smm-box-link {
+		font-size: 18px;
+		margin-bottom: 10px;
+	}
+
+	.case {
+		height: 3000px;
+	}
+	.case-box {
+		width: 100%;
+	}
+
+	.case-box-bg {
+		width: 100%;
+	}
+	.case-box-button {
+		width: 280px;
+	}
+
+	.case-box h3 {
+		font-size: 20px;
+	}
+
+	.sunduk-side {
+		margin-left: 15px;
+		width: 220px;
+		height: 220px;
+	}
+
+	.sunduk-center {
+		width: 220px;
+		height: 220px;
+	}
+
+	.notebook{
+	&-image {
+	height: 1100px;
+	background: url("../img/notebook-image.jpg") no-repeat center center scroll;
+    background-size: cover;
+   
+  }
+    &-header {
+    	text-align: center;
+    	margin-top: 50px;
+    	&-text {
+    		font-family: 'Century Schoolbook';
+			font-weight: 400;
+			color: $white;
+			font-size: 30px;
+    	}
+    }
+    &-quote {
+    	font-family: 'Century Schoolbook';
+			font-weight: 400;
+			color: $white;
+			font-size: 22px;
+    }
+    &-box {
+
+    	&-text {
+    		font-family: 'ITC Franklin Gothic Medium';
+			font-weight: 400;
+			color: $white;
+			font-size: 16px;
+    	}
+    	&-image {
+    		width: 450px;
+    		height: 670px;
+    	}
+    }
+}
+	.features {
+		height: 2290px;
+	}
+
+	.footer {
+		height: 600px;
+	}
+	.footer-header {
+		margin-bottom: 10px;
+	}
+	.footer-header h3 {
+		line-height: 60px;
+		font-size: 40px;
+	}
+	.footer-contacts {
+		text-align: center;
+	}
+	.footer-box-button {
+		font-size: 24px;
+	}
+	.footer-logo-box {
+		text-align: center;
+		padding-left: 15px;
+	}
+}
+
+
+
+@media (min-width: 421px) and (max-width:576px){
+
+.bonus {
+
+	&-dialog {
+		margin: 0 0;
+	}
+	&-closebutton {
+		width: 25px;
+		height: 25px;
+	}
+
+	&-header {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 20px;
+		border:none;
+		h3 {
+			color: $red;
+		font-family: 'Bookman Old Style';
+		font-weight: 700;
+		text-transform: uppercase;
+		font-size: 32px;
+		margin-bottom: 20px;
+		}
+		&-text {
+			text-align: center;
+			font-family: 'Bookman Old Style';
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 22px;
+			color: $white;
+			padding-bottom: 30px;
+			&-red {
+				color: $red;
+		}
+		span {
+			color: $red;
+		}
+	}
+}
+	&-footer {
+		border: none;
+	}
+	&-content {
+		width: 100vw;
+		height: 800px;
+		background: url("../img/seosmm-bg.jpg") no-repeat center center scroll;
+        background-size: cover;
+        opacity: 0.812;
+        background-color: #000;
+	}
+
+	&-box {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 35px;
+    	width: 285px;
+    	height: 400px;
+    	background-color: $black;
+    	border: 3px #545050 solid;
+    	-webkit-border-radius: 10px;
+    	-moz-border-radius: 10px;
+    	-ms-border-radius: 10px;
+    	-o-border-radius: 10px;
+    	border-radius: 10px;
+
+
+    	&-plus {
+    		line-height: 0px;
+    		text-align: center;
+    		font-family: 'Bookman Old Style';
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 24px;
+    		color: $white;
+    	}
+    	&-text {
+    		line-height: 40px;
+    		text-align: center;
+    		font-family: 'Bookman Old Style';
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 26px;
+    		color: $white;
+
+    		&-red {
+    			color:$red;
+    		}
+
+
+    	}
+    	&-button {
+    		background-color: #800e0e;
+    		border: 4px #000 solid;
+    		color: $black;
+    		font-weight: 500;
+    		font-size: 24px;
+    		width: 225px;
+    		margin-top: 30px;
+    		height: 50px;
+    		&:hover {
+    			background-color: #800e0e;
+    			color: $white;
+    			-webkit-transition: all 0.4s ease 0s;
+                -moz-transition: all 0.4s ease 0s;
+                -ms-transition: all 0.4s ease 0s;
+                -o-transition: all 0.4s ease 0s;
+                transition: all 0.4s ease 0s;
+    		}
+    	}
+    }
+}
+
+
+.sitedevelop {
+	&-body {
+		width: 100vw;
+	}
+	&-arrow {
+		width: 70px;
+		height: 30px;
+		display: block;
+		vertical-align: middle;
+		float: left;
+	}
+
+	&-text {
+		
+		
+		margin-bottom: 30px;
+		font-family: 'Bookman Old Style';
+		font-weight: 400;
+		font-size: 14px;
+		color: $white;
+		text-transform: uppercase;
+	}
+	&-dialog {
+		margin: 0 0;
+	}
+	&-closebutton {
+		width: 25px;
+		height: 25px;
+	}
+
+	&-header {
+		margin-left: auto;
+		margin-right: auto;
+		color: $white;
+		border:none;
+		h3 {
+			font-family: 'Bookman Old Style';
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 20px;
+		}
+		
+		&-text {
+			text-align: center;
+			font-family: 'Bookman Old Style';
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 18px;
+			color: $red;
+			
+		}
+	}
+
+	&-footer {
+		border: none;
+	}
+	&-content {
+		width: 100vw;
+		height: 100vh;
+		background: url("../img/site-develop-bg.jpg") no-repeat center center scroll;
+        background-size: cover;
+        opacity: 0.812;
+        background-color: #000;
+	}
+
+	&-box {
+    	
+    	width: 100vw;
+    	height: 500px;
+    	background-color: #fff;
+
+    	&-h {
+    		letter-spacing: 1px;
+    		font-family: 'Corbel';
+    		text-transform: uppercase;
+    		margin-bottom: 25px;
+    		text-align: center;
+    		font-size: 22px;
+    		font-weight: 500;
+    		color: $black;
+    	}
+
+    	&-row {
+    		text-align: center;
+    		margin-bottom: 40px;
+    	}
+
+    	&-item {
+    		font-family: 'Corbel';
+    		font-weight: 400;
+    		border: 4px #000 solid;
+    		background-color: #800e0e;
+    		font-size: 18px;
+    		color: #000;
+    		width: 320px;
+    		height: 60px;
+    		padding-left: 10px;
+    		&:focus {
+
+    			&::placeholder {
+    				-webkit-transition: all 0.4s ease 0s;
+    			-o-transition: all 0.4s ease 0s;
+    			transition: all 0.4s ease 0s;
+    				color: $white;
+    				padding-left: 0px;
+    			}
+    			text-decoration: none;
+    			padding-left: 10px;
+
+    			
+    		}
+    		&::placeholder {
+    			
+    			font-size: 20px;
+    			font-weight: 100;
+    		}
+    	}
+
+    	&-button {
+    		background-color: #800e0e;
+    		border: 4px #000 solid;
+    		color: $black;
+    		font-weight: 500;
+    		font-size: 24px;
+    		width: 225px;
+    		margin-top: 30px;
+    		height: 50px;
+    		&:hover {
+    			background-color: #800e0e;
+    			color: $white;
+    			-webkit-transition: all 0.4s ease 0s;
+                -moz-transition: all 0.4s ease 0s;
+                -ms-transition: all 0.4s ease 0s;
+                -o-transition: all 0.4s ease 0s;
+                transition: all 0.4s ease 0s;
+    		}
+    	}
+    }
+}
+
+
+
+.seosmm {
+
+	&-arrow {
+		width: 70px;
+		height: 30px;
+		display: block;
+		float: left;
+	}
+	&-text {
+		margin-left: 0;
+		margin-bottom: 30px;
+		font-family: 'Bookman Old Style';
+		font-weight: 400;
+		font-size: 14px;
+		color: $white;
+		text-transform: uppercase;
+	}
+
+	&-dialog {
+		margin: 0 0;
+	}
+	&-closebutton {
+		width: 25px;
+		height: 25px;
+	}
+
+	&-header {
+		margin-left: auto;
+		margin-right: auto;
+		color: $white;
+		border:none;
+		h3 {
+			font-family: 'Bookman Old Style';
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 26px;
+		}
+		
+		&-text {
+			font-family: 'Bookman Old Style';
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 24px;
+			color: $red;
+			margin-left: 70px;	
+		}
+	}
+
+	&-footer {
+		border: none;
+	}
+	&-content {
+		width: 100vw;
+		height: 100vh;
+		background: url("../img/seosmm-bg.jpg") no-repeat center center scroll;
+        background-size: cover;
+        opacity: 0.812;
+        background-color: #000;
+	}
+
+	&-box {
+    	
+    	width: 310px;
+    	height: 500px;
+    	background-color: #fff;
+
+    	&-h {
+    		letter-spacing: 1px;
+    		font-family: 'Corbel';
+    		text-transform: uppercase;
+    		margin-bottom: 25px;
+    		text-align: center;
+    		font-size: 30px;
+    		font-weight: 500;
+    		color: $black;
+    	}
+
+    	&-row {
+    		text-align: center;
+    		margin-bottom: 40px;
+    	}
+
+    	&-item {
+    		font-family: 'Corbel';
+    		font-weight: 400;
+    		border: 4px #000 solid;
+    		background-color: #800e0e;
+    		font-size: 18px;
+    		color: #000;
+    		width: 320px;
+    		height: 60px;
+    		
+    		&:focus {
+
+    			&::placeholder {
+    				-webkit-transition: all 0.4s ease 0s;
+    			-o-transition: all 0.4s ease 0s;
+    			transition: all 0.4s ease 0s;
+    				color: $white;
+    				padding-left: 0px;
+    			}
+    			text-decoration: none;
+    			padding-left: 10px;
+
+    			
+    		}
+    		&::placeholder {
+    			
+    			font-size: 20px;
+    			font-weight: 100;
+    		}
+    	}
+
+    	&-button {
+    		background-color: #800e0e;
+    		border: 4px #000 solid;
+    		color: $black;
+    		font-weight: 500;
+    		font-size: 24px;
+    		width: 225px;
+    		margin-top: 30px;
+    		height: 50px;
+    		&:hover {
+    			background-color: #800e0e;
+    			color: $white;
+    			-webkit-transition: all 0.4s ease 0s;
+                -moz-transition: all 0.4s ease 0s;
+                -ms-transition: all 0.4s ease 0s;
+                -o-transition: all 0.4s ease 0s;
+                transition: all 0.4s ease 0s;
+    		}
+    	}
+    }
+}
+
+.consultation {
+&-dialog {
+		margin: 0 0 ;
+	}
+	&-closebutton {
+		width: 25px;
+		height: 25px;
+	}
+
+	&-header {
+		border:none;
+	}
+
+	&-footer {
+		border: none;
+	}
+	&-content {
+		width: 100vw;
+		height: 100vh;
+		background: url("../img/consult.jpg") no-repeat center center scroll;
+        background-size: cover;
+	}
+
+	&-box {
+    	margin-top: 160px;
+    	width: 310px;
+    	height: 500px;
+    	background-color: #fff;
+
+    	&-h {
+    		letter-spacing: 1px;
+    		font-family: 'Corbel';
+    		text-transform: uppercase;
+    		margin-bottom: 25px;
+    		text-align: center;
+    		font-size: 30px;
+    		font-weight: 500;
+    		color: $black;
+    	}
+
+    	&-row {
+    		text-align: center;
+    		margin-bottom: 40px;
+    	}
+
+    	&-item {
+    		font-family: 'Corbel';
+    		font-weight: 400;
+    		border: 4px #000 solid;
+    		background-color: #800e0e;
+    		font-size: 18px;
+    		color: #000;
+    		width: 320px;
+    		height: 60px;
+    		padding-left: 10px;
+    		&:focus {
+
+    			&::placeholder {
+    				-webkit-transition: all 0.4s ease 0s;
+    			-o-transition: all 0.4s ease 0s;
+    			transition: all 0.4s ease 0s;
+    				color: $white;
+    				padding-left: 0px;
+    			}
+    			text-decoration: none;
+    			padding-left: 10px;
+
+    			
+    		}
+    		&::placeholder {
+    			
+    			font-size: 20px;
+    			font-weight: 100;
+    		}
+    	}
+
+    	&-button {
+    		background-color: #800e0e;
+    		border: 4px #000 solid;
+    		color: $black;
+    		font-weight: 500;
+    		font-size: 24px;
+    		width: 225px;
+    		margin-top: 30px;
+    		height: 50px;
+    		&:hover {
+    			background-color: #800e0e;
+    			color: $white;
+    			-webkit-transition: all 0.4s ease 0s;
+                -moz-transition: all 0.4s ease 0s;
+                -ms-transition: all 0.4s ease 0s;
+                -o-transition: all 0.4s ease 0s;
+                transition: all 0.4s ease 0s;
+    		}
+    	}
+    }
+}
+
+
+
+.navbar-collapse {
+	
+	text-align: center;
+}
+
+.nav-item {
+	margin: auto;
+	width: 100%;
+	text-align: center;
+	height: inherit;
+	font-size: 18px;
+	background-color: #000;
+	&:hover {
+		color: $red;
+		background-color: $white;
+	}
+}
+
+
+.header {
+	height: 100vh;
+    &-list {
+    	&-box {
+    		margin-left: auto;
+    		margin-right: auto;
+    		width: 100%;
+    	}
+    	&-under {
+    		font-family: 'Georgia';
+    		color: $red;
+    		font-size: 26px;
+    		position: relative;
+    	    margin-left: 0;
+    	}
+    	position: relative;
+    	margin-left: 20px;
+    	margin-top: 30px;
+    	font-family: 'Georgia';
+    	font-size: 26px;
+    	color: $white;
+
+    	&-item {
+    		position: relative;
+    		margin-bottom: 10px;
+    	}
+    }
+
+    &-button {
+    	margin-left: auto;
+    	margin-right: auto;
+    	background-color: #800e0e;
+    	display: block;
+    	border: 5px $black solid;
+    	text-align: center;
+    	font-family: 'Georgia';
+    	width: 205px;
+    	height: 50px;
+    	text-transform: uppercase;
+    	text-decoration: none;
+    	font-size: 24px;
+    	color: $white;
+    	&:hover {
+    		text-decoration: none;
+    		color: $white;
+    		background-color: $dark-red;
+    	}
+    }
+
+    &-bonus{
+    	margin-left: auto;
+    		margin-right: auto;
+    	&-text {
+
+    	font-family: 'ITC Franklin Gothic Medium';
+    	font-size: 24px;
+    	color: $white;
+    	margin-bottom: 0;
+    }
+    	span {
+    		margin-left: 150px;
+    		font-family: 'ITC Franklin Gothic Medium';
+    		text-transform: uppercase;
+    		color: $black;
+    		font-size: 24px;
+    	}	
+    }
+}
+
+
+	.nav-logo {
+		width: 70;
+		height: 45px;
+	}
+
+	.logo-text {
+		font-size: 24px;
+	}
+	.header h1 {
+		font-size: 30px;
+		text-align: center;
+		margin-top: 100px;
+	}
+	.header-subline {
+		margin-top: 15px;
+		padding-left: 15px;
+		font-size: 18px;
+		text-align: center;
+	}
+
+
+	#sitedevelopment {
+		height: 2350px;
+	}
+
+	.sitedevelopment-header {
+		margin-top: 30px;
+	}
+	.sitedevelopment-box {
+		
+	}
+	.sitedevelopment-box-i{
+		text-align: center;
+	}
+	.sitedevelopment-box-image {
+		
+		width: 220px;
+		height: 220px;
+	}
+	.sitedevelopment-box-bg {
+		
+		margin-top: -160px;
+		height: 600px;
+		width: 100%;
+	}
+
+	.sitedevelopment-box h3 {
+		font-size: 18px;
+		padding-top: 155px;
+	}
+	.sitedevelopment-box h4 {
+		font-size: 18px;
+		margin-top: 10px;
+		padding-bottom: 20px;
+	}
+	.date {
+		margin-bottom: 20px;
+	}
+	.sitedevelopment-box-area {
+		margin-bottom: 25px;
+		width: inherit;
+	}
+	.sitedevelopment-box-link {
+		font-size: 18px;
+	}
+	.sitedevelopment-box-2 {
+	
+	}
+	.sitedevelopment-box-ultro h3 {
+		padding-bottom: 10px;
+	}
+
+	.smm {
+		height: 1900px;
+	}
+
+	.smm-box {
+		
+	}
+	.smm-box-bg {
+		width: 100%	;
+	}
+	.smm-box-mark {
+		margin-left: 25px;
+	}
+	.smm-box-image {
+		
+		width: 220px;
+		height: 220px;
+	}
+	.smm-box-area {
+		margin-bottom: 25px;
+		width: inherit;
+	}
+	.smm-box-link {
+		font-size: 18px;
+		margin-bottom: 10px;
+	}
+
+	.case {
+		height: 3000px;
+	}
+	.case-box {
+	
+	}
+
+	.case-box-bg {
+		width: 100%;
+	}
+
+	.case-box-button {
+		width: 280px;
+	}
+
+
+.notebook{
+	&-image {
+	height: 1050px;
+	background: url("../img/notebook-image.jpg") no-repeat center center scroll;
+    background-size: cover;
+   
+  }
+    &-header {
+    	text-align: center;
+    	margin-top: 50px;
+    	&-text {
+    		font-family: 'Century Schoolbook';
+			font-weight: 400;
+			color: $white;
+			font-size: 30px;
+    	}
+    }
+    &-quote {
+    	font-family: 'Century Schoolbook';
+			font-weight: 400;
+			color: $white;
+			font-size: 22px;
+    }
+    &-box {
+
+    	&-text {
+    		font-family: 'ITC Franklin Gothic Medium';
+			font-weight: 400;
+			color: $white;
+			font-size: 18px;
+    	}
+    	&-image {
+    		width: 450px;
+    		height: 670px;
+    	}
+    }
+}
+
+	.features {
+		height: 2290px;
+	}
+
+	.footer {
+		height: 600px;
+	}
+	.footer-header {
+		margin-bottom: 10px;
+	}
+	.footer-header h3 {
+		line-height: 60px;
+		font-size: 40px;
+	}
+	.footer-contacts {
+		text-align: center;
+	}
+	.footer-box-button {
+		font-size: 24px;
+	}
+	.footer-logo-box {
+		text-align: center;
+		padding-left: 15px;
+	}
+}
+
+
+
+
+
+@media (min-width: 577px) and (max-width:768px){
+
+
+.bonus {
+
+	&-dialog {
+		margin: 0 0;
+	}
+	&-closebutton {
+		width: 25px;
+		height: 25px;
+	}
+
+	&-header {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 20px;
+		border:none;
+		h3 {
+			color: $red;
+		font-family: 'Bookman Old Style';
+		font-weight: 700;
+		text-transform: uppercase;
+		font-size: 32px;
+		margin-bottom: 20px;
+		}
+		&-text {
+			text-align: center;
+			font-family: 'Bookman Old Style';
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 22px;
+			color: $white;
+			padding-bottom: 30px;
+			&-red {
+				color: $red;
+		}
+		span {
+			color: $red;
+		}
+	}
+}
+	&-footer {
+		border: none;
+	}
+	&-content {
+		width: 100vw;
+		height: 800px;
+		background: url("../img/seosmm-bg.jpg") no-repeat center center scroll;
+        background-size: cover;
+        opacity: 0.812;
+        background-color: #000;
+	}
+
+	&-box {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 35px;
+    	width: 285px;
+    	height: 400px;
+    	background-color: $black;
+    	border: 3px #545050 solid;
+    	-webkit-border-radius: 10px;
+    	-moz-border-radius: 10px;
+    	-ms-border-radius: 10px;
+    	-o-border-radius: 10px;
+    	border-radius: 10px;
+
+
+    	&-plus {
+    		line-height: 0px;
+    		text-align: center;
+    		font-family: 'Bookman Old Style';
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 24px;
+    		color: $white;
+    	}
+    	&-text {
+    		line-height: 40px;
+    		text-align: center;
+    		font-family: 'Bookman Old Style';
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 26px;
+    		color: $white;
+
+    		&-red {
+    			color:$red;
+    		}
+
+
+    	}
+    	&-button {
+    		background-color: #800e0e;
+    		border: 4px #000 solid;
+    		color: $black;
+    		font-weight: 500;
+    		font-size: 24px;
+    		width: 225px;
+    		margin-top: 30px;
+    		height: 50px;
+    		&:hover {
+    			background-color: #800e0e;
+    			color: $white;
+    			-webkit-transition: all 0.4s ease 0s;
+                -moz-transition: all 0.4s ease 0s;
+                -ms-transition: all 0.4s ease 0s;
+                -o-transition: all 0.4s ease 0s;
+                transition: all 0.4s ease 0s;
+    		}
+    	}
+    }
+}
+
+
+.sitedevelop {
+	&-body {
+		width: 100vw;
+	}
+	&-arrow {
+		width: 70px;
+		height: 30px;
+		display: block;
+		vertical-align: middle;
+		float: left;
+	}
+
+	&-text {
+		
+		
+		margin-bottom: 30px;
+		font-family: 'Bookman Old Style';
+		font-weight: 400;
+		font-size: 14px;
+		color: $white;
+		text-transform: uppercase;
+	}
+	&-dialog {
+		margin: 0 0;
+	}
+	&-closebutton {
+		width: 25px;
+		height: 25px;
+	}
+
+	&-header {
+		margin-left: auto;
+		margin-right: auto;
+		color: $white;
+		border:none;
+		h3 {
+			font-family: 'Bookman Old Style';
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 20px;
+		}
+		
+		&-text {
+			text-align: center;
+			font-family: 'Bookman Old Style';
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 18px;
+			color: $red;
+			
+		}
+	}
+
+	&-footer {
+		border: none;
+	}
+	&-content {
+		width: 100vw;
+		height: 100vh;
+		background: url("../img/site-develop-bg.jpg") no-repeat center center scroll;
+        background-size: cover;
+        opacity: 0.812;
+        background-color: #000;
+	}
+
+	&-box {
+    	
+    	width: 100vw;
+    	height: 500px;
+    	background-color: #fff;
+
+    	&-h {
+    		letter-spacing: 1px;
+    		font-family: 'Corbel';
+    		text-transform: uppercase;
+    		margin-bottom: 25px;
+    		text-align: center;
+    		font-size: 22px;
+    		font-weight: 500;
+    		color: $black;
+    	}
+
+    	&-row {
+    		text-align: center;
+    		margin-bottom: 40px;
+    	}
+
+    	&-item {
+    		font-family: 'Corbel';
+    		font-weight: 400;
+    		border: 4px #000 solid;
+    		background-color: #800e0e;
+    		font-size: 18px;
+    		color: #000;
+    		width: 320px;
+    		height: 60px;
+    		padding-left: 10px;
+    		&:focus {
+
+    			&::placeholder {
+    				-webkit-transition: all 0.4s ease 0s;
+    			-o-transition: all 0.4s ease 0s;
+    			transition: all 0.4s ease 0s;
+    				color: $white;
+    				padding-left: 0px;
+    			}
+    			text-decoration: none;
+    			padding-left: 10px;
+
+    			
+    		}
+    		&::placeholder {
+    			
+    			font-size: 20px;
+    			font-weight: 100;
+    		}
+    	}
+
+    	&-button {
+    		background-color: #800e0e;
+    		border: 4px #000 solid;
+    		color: $black;
+    		font-weight: 500;
+    		font-size: 24px;
+    		width: 225px;
+    		margin-top: 30px;
+    		height: 50px;
+    		&:hover {
+    			background-color: #800e0e;
+    			color: $white;
+    			-webkit-transition: all 0.4s ease 0s;
+                -moz-transition: all 0.4s ease 0s;
+                -ms-transition: all 0.4s ease 0s;
+                -o-transition: all 0.4s ease 0s;
+                transition: all 0.4s ease 0s;
+    		}
+    	}
+    }
+}
+
+
+
+.seosmm {
+
+	&-arrow {
+		width: 70px;
+		height: 30px;
+		display: block;
+		float: left;
+	}
+	&-text {
+		margin-left: 0;
+		margin-bottom: 30px;
+		font-family: 'Bookman Old Style';
+		font-weight: 400;
+		font-size: 14px;
+		color: $white;
+		text-transform: uppercase;
+	}
+
+	&-dialog {
+		margin: 0 0;
+	}
+	&-closebutton {
+		width: 25px;
+		height: 25px;
+	}
+
+	&-header {
+		margin-left: auto;
+		margin-right: auto;
+		color: $white;
+		border:none;
+		h3 {
+			font-family: 'Bookman Old Style';
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 26px;
+		}
+		
+		&-text {
+			font-family: 'Bookman Old Style';
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 24px;
+			color: $red;
+			margin-left: 70px;	
+		}
+	}
+
+	&-footer {
+		border: none;
+	}
+	&-content {
+		width: 100vw;
+		height: 100vh;
+		background: url("../img/seosmm-bg.jpg") no-repeat center center scroll;
+        background-size: cover;
+        opacity: 0.812;
+        background-color: #000;
+	}
+
+	&-box {
+    	
+    	width: 310px;
+    	height: 500px;
+    	background-color: #fff;
+
+    	&-h {
+    		letter-spacing: 1px;
+    		font-family: 'Corbel';
+    		text-transform: uppercase;
+    		margin-bottom: 25px;
+    		text-align: center;
+    		font-size: 30px;
+    		font-weight: 500;
+    		color: $black;
+    	}
+
+    	&-row {
+    		text-align: center;
+    		margin-bottom: 40px;
+    	}
+
+    	&-item {
+    		font-family: 'Corbel';
+    		font-weight: 400;
+    		border: 4px #000 solid;
+    		background-color: #800e0e;
+    		font-size: 18px;
+    		color: #000;
+    		width: 320px;
+    		height: 60px;
+    		
+    		&:focus {
+
+    			&::placeholder {
+    				-webkit-transition: all 0.4s ease 0s;
+    			-o-transition: all 0.4s ease 0s;
+    			transition: all 0.4s ease 0s;
+    				color: $white;
+    				padding-left: 0px;
+    			}
+    			text-decoration: none;
+    			padding-left: 10px;
+
+    			
+    		}
+    		&::placeholder {
+    			
+    			font-size: 20px;
+    			font-weight: 100;
+    		}
+    	}
+
+    	&-button {
+    		background-color: #800e0e;
+    		border: 4px #000 solid;
+    		color: $black;
+    		font-weight: 500;
+    		font-size: 24px;
+    		width: 225px;
+    		margin-top: 30px;
+    		height: 50px;
+    		&:hover {
+    			background-color: #800e0e;
+    			color: $white;
+    			-webkit-transition: all 0.4s ease 0s;
+                -moz-transition: all 0.4s ease 0s;
+                -ms-transition: all 0.4s ease 0s;
+                -o-transition: all 0.4s ease 0s;
+                transition: all 0.4s ease 0s;
+    		}
+    	}
+    }
+}
+
+.consultation {
+&-dialog {
+		margin: 0 10% ;
+	}
+	&-closebutton {
+		width: 25px;
+		height: 25px;
+	}
+
+	&-header {
+		border:none;
+	}
+
+	&-footer {
+		border: none;
+	}
+	&-content {
+		width: 80vw;
+		height: 80vh;
+		background: url("../img/consult.jpg") no-repeat center center scroll;
+        background-size: cover;
+	}
+
+	&-box {
+    	margin-top: 160px;
+    	width: 310px;
+    	height: 500px;
+    	background-color: #fff;
+
+    	&-h {
+    		letter-spacing: 1px;
+    		font-family: 'Corbel';
+    		text-transform: uppercase;
+    		margin-bottom: 25px;
+    		text-align: center;
+    		font-size: 30px;
+    		font-weight: 500;
+    		color: $black;
+    	}
+
+    	&-row {
+    		text-align: center;
+    		margin-bottom: 40px;
+    	}
+
+    	&-item {
+    		font-family: 'Corbel';
+    		font-weight: 400;
+    		border: 4px #000 solid;
+    		background-color: #800e0e;
+    		font-size: 18px;
+    		color: #000;
+    		width: 320px;
+    		height: 60px;
+    		padding-left: 10px;
+    		&:focus {
+
+    			&::placeholder {
+    				-webkit-transition: all 0.4s ease 0s;
+    			-o-transition: all 0.4s ease 0s;
+    			transition: all 0.4s ease 0s;
+    				color: $white;
+    				padding-left: 0px;
+    			}
+    			text-decoration: none;
+    			padding-left: 10px;
+
+    			
+    		}
+    		&::placeholder {
+    			
+    			font-size: 20px;
+    			font-weight: 100;
+    		}
+    	}
+
+    	&-button {
+    		background-color: #800e0e;
+    		border: 4px #000 solid;
+    		color: $black;
+    		font-weight: 500;
+    		font-size: 24px;
+    		width: 225px;
+    		margin-top: 30px;
+    		height: 50px;
+    		&:hover {
+    			background-color: #800e0e;
+    			color: $white;
+    			-webkit-transition: all 0.4s ease 0s;
+                -moz-transition: all 0.4s ease 0s;
+                -ms-transition: all 0.4s ease 0s;
+                -o-transition: all 0.4s ease 0s;
+                transition: all 0.4s ease 0s;
+    		}
+    	}
+    }
+}
+
+
+
+.navbar-collapse {
+	
+	text-align: center;
+}
+
+.nav-item {
+	margin: auto;
+	width: 100%;
+	text-align: center;
+	height: inherit;
+	font-size: 18px;
+	background-color: #000;
+	&:hover {
+		color: $red;
+		background-color: $white;
+	}
+}
+
+
+
+.header {
+	height: 100vh;
+    &-list {
+    	&-box {
+    		margin-left: auto;
+    		margin-right: auto;
+    		width: 100%;
+    	}
+    	&-under {
+    		font-family: 'Georgia';
+    		color: $red;
+    		font-size: 26px;
+    		position: relative;
+    	    margin-left: 0;
+    	}
+    	position: relative;
+    	margin-left: 20px;
+    	margin-top: 30px;
+    	font-family: 'Georgia';
+    	font-size: 26px;
+    	color: $white;
+
+    	&-item {
+    		position: relative;
+    		margin-bottom: 10px;
+    	}
+    }
+
+    &-button {
+    	margin-left: auto;
+    	margin-right: auto;
+    	background-color: #800e0e;
+    	display: block;
+    	border: 5px $black solid;
+    	text-align: center;
+    	font-family: 'Georgia';
+    	width: 205px;
+    	height: 50px;
+    	text-transform: uppercase;
+    	text-decoration: none;
+    	font-size: 24px;
+    	color: $white;
+    	&:hover {
+    		text-decoration: none;
+    		color: $white;
+    		background-color: $dark-red;
+    	}
+    }
+
+    &-bonus{
+    	margin-left: auto;
+    		margin-right: auto;
+    	&-text {
+
+    	font-family: 'ITC Franklin Gothic Medium';
+    	font-size: 24px;
+    	color: $white;
+    	margin-bottom: 0;
+    }
+    	span {
+    		margin-left: 150px;
+    		font-family: 'ITC Franklin Gothic Medium';
+    		text-transform: uppercase;
+    		color: $black;
+    		font-size: 24px;
+    	}	
+    }
+}
+
+	.nav-logo {
+		width: 70;
+		height: 45px;
+	}
+
+	.logo-text {
+		font-size: 24px;
+	}
+	.header h1 {
+		font-size: 30px;
+		text-align: center;
+		margin-top: 100px;
+	}
+	.header-subline {
+		margin-top: 15px;
+		padding-left: 15px;
+		font-size: 18px;
+		text-align: center;
+	}
+
+
+	#sitedevelopment {
+		height: 2350px;
+	}
+
+	.sitedevelopment-header {
+		margin-top: 30px;
+	}
+	.sitedevelopment-box {
+		
+	}
+	.sitedevelopment-box-i{
+		text-align: center;
+	}
+	.sitedevelopment-box-image {
+		
+		width: 220px;
+		height: 220px;
+	}
+	.sitedevelopment-box-bg {
+		
+		margin-top: -160px;
+		height: 600px;
+		width: 100%;
+	}
+
+	.sitedevelopment-box h3 {
+		font-size: 18px;
+		padding-top: 155px;
+	}
+	.sitedevelopment-box h4 {
+		font-size: 18px;
+		margin-top: 10px;
+		padding-bottom: 20px;
+	}
+	.date {
+		margin-bottom: 20px;
+	}
+	.sitedevelopment-box-area {
+		margin-bottom: 25px;
+		width: inherit;
+	}
+	.sitedevelopment-box-link {
+		font-size: 18px;
+	}
+	.sitedevelopment-box-2 {
+	
+	}
+	.sitedevelopment-box-ultro h3 {
+		padding-bottom: 10px;
+	}
+
+	.smm {
+		height: 1900px;
+	}
+
+	.smm-box {
+		
+	}
+	.smm-box-bg {
+		width: 100%	;
+	}
+	.smm-box-mark {
+		margin-left: 25px;
+	}
+	.smm-box-image {
+		
+		width: 220px;
+		height: 220px;
+	}
+	.smm-box-area {
+		margin-bottom: 25px;
+		width: inherit;
+	}
+	.smm-box-link {
+		font-size: 18px;
+		margin-bottom: 10px;
+	}
+
+	.case {
+		height: 3000px;
+	}
+	.case-box {
+	
+	}
+
+	.case-box-bg {
+		width: 100%;
+	}
+
+	.case-box-button {
+		width: 280px;
+	}
+
+
+.notebook{
+	&-image {
+	height: 900px;
+	background: url("../img/notebook-image.jpg") no-repeat center center scroll;
+    background-size: cover;
+   
+  }
+    &-header {
+    	text-align: center;
+    	margin-top: 50px;
+    	&-text {
+    		font-family: 'Century Schoolbook';
+			font-weight: 400;
+			color: $white;
+			font-size: 30px;
+    	}
+    }
+    &-quote {
+    	font-family: 'Century Schoolbook';
+			font-weight: 400;
+			color: $white;
+			font-size: 24px;
+    }
+    &-box {
+
+    	&-text {
+    		font-family: 'ITC Franklin Gothic Medium';
+			font-weight: 400;
+			color: $white;
+			font-size: 20px;
+    	}
+    	&-image {
+    		width: 450px;
+    		height: 670px;
+    	}
+    }
+}
+
+
+	.features {
+		height: 1090px;
+	}
+
+	.footer {
+		height: 600px;
+	}
+	.footer-header {
+		margin-bottom: 10px;
+	}
+	.footer-header h3 {
+		line-height: 60px;
+		font-size: 40px;
+	}
+	.footer-contacts {
+		text-align: center;
+	}
+	.footer-box-button {
+		font-size: 24px;
+	}
+	.footer-logo-box {
+		text-align: center;
+		padding-left: 15px;
+	}
+}
+
+
+
+
+@media (min-width: 769px) and (max-width:992px){
+
+
+.bonus {
+
+	&-dialog {
+		margin: 100px 10%;
+	}
+	&-closebutton {
+		width: 25px;
+		height: 25px;
+	}
+
+	&-header {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 20px;
+		border:none;
+		h3 {
+			color: $red;
+		font-family: 'Bookman Old Style';
+		font-weight: 700;
+		text-transform: uppercase;
+		font-size: 32px;
+		margin-bottom: 20px;
+		}
+		&-text {
+			text-align: center;
+			font-family: 'Bookman Old Style';
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 22px;
+			color: $white;
+			padding-bottom: 30px;
+			&-red {
+				color: $red;
+		}
+		span {
+			color: $red;
+		}
+	}
+}
+	&-footer {
+		border: none;
+	}
+	&-content {
+		width: 80vw;
+		height: 800px;
+		background: url("../img/seosmm-bg.jpg") no-repeat center center scroll;
+        background-size: cover;
+        opacity: 0.812;
+        background-color: #000;
+	}
+
+	&-box {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 35px;
+    	width: 285px;
+    	height: 400px;
+    	background-color: $black;
+    	border: 3px #545050 solid;
+    	-webkit-border-radius: 10px;
+    	-moz-border-radius: 10px;
+    	-ms-border-radius: 10px;
+    	-o-border-radius: 10px;
+    	border-radius: 10px;
+
+
+    	&-plus {
+    		line-height: 0px;
+    		text-align: center;
+    		font-family: 'Bookman Old Style';
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 24px;
+    		color: $white;
+    	}
+    	&-text {
+    		line-height: 40px;
+    		text-align: center;
+    		font-family: 'Bookman Old Style';
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 26px;
+    		color: $white;
+
+    		&-red {
+    			color:$red;
+    		}
+
+
+    	}
+    	&-button {
+    		background-color: #800e0e;
+    		border: 4px #000 solid;
+    		color: $black;
+    		font-weight: 500;
+    		font-size: 24px;
+    		width: 225px;
+    		margin-top: 30px;
+    		height: 50px;
+    		&:hover {
+    			background-color: #800e0e;
+    			color: $white;
+    			-webkit-transition: all 0.4s ease 0s;
+                -moz-transition: all 0.4s ease 0s;
+                -ms-transition: all 0.4s ease 0s;
+                -o-transition: all 0.4s ease 0s;
+                transition: all 0.4s ease 0s;
+    		}
+    	}
+    }
+}
+
+
+.sitedevelop {
+	&-body {
+		
+	}
+	&-arrow {
+		width: 70px;
+		height: 30px;
+		display: block;
+		vertical-align: middle;
+		float: left;
+	}
+
+	&-text {
+		
+		
+		margin-bottom: 30px;
+		font-family: 'Bookman Old Style';
+		font-weight: 400;
+		font-size: 16px;
+		color: $white;
+		text-transform: uppercase;
+	}
+	&-dialog {
+		margin: 100px 10%;
+	}
+	&-closebutton {
+		width: 25px;
+		height: 25px;
+	}
+
+	&-header {
+		margin-left: auto;
+		margin-right: auto;
+		color: $white;
+		border:none;
+		h3 {
+			font-family: 'Bookman Old Style';
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 20px;
+		}
+		
+		&-text {
+			text-align: center;
+			font-family: 'Bookman Old Style';
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 18px;
+			color: $red;
+			
+		}
+	}
+
+	&-footer {
+		border: none;
+	}
+	&-content {
+		width: 80vw;
+		height: 90vh;
+		background: url("../img/site-develop-bg.jpg") no-repeat center center scroll;
+        background-size: cover;
+        opacity: 0.812;
+        background-color: #000;
+	}
+
+	&-box {
+    	
+    	width: 100vw;
+    	height: 500px;
+    	background-color: #fff;
+
+    	&-h {
+    		letter-spacing: 1px;
+    		font-family: 'Corbel';
+    		text-transform: uppercase;
+    		margin-bottom: 25px;
+    		text-align: center;
+    		font-size: 22px;
+    		font-weight: 500;
+    		color: $black;
+    	}
+
+    	&-row {
+    		text-align: center;
+    		margin-bottom: 40px;
+    	}
+
+    	&-item {
+    		font-family: 'Corbel';
+    		font-weight: 400;
+    		border: 4px #000 solid;
+    		background-color: #800e0e;
+    		font-size: 18px;
+    		color: #000;
+    		width: 320px;
+    		height: 60px;
+    		padding-left: 10px;
+    		&:focus {
+
+    			&::placeholder {
+    				-webkit-transition: all 0.4s ease 0s;
+    			-o-transition: all 0.4s ease 0s;
+    			transition: all 0.4s ease 0s;
+    				color: $white;
+    				padding-left: 0px;
+    			}
+    			text-decoration: none;
+    			padding-left: 10px;
+
+    			
+    		}
+    		&::placeholder {
+    			
+    			font-size: 20px;
+    			font-weight: 100;
+    		}
+    	}
+
+    	&-button {
+    		background-color: #800e0e;
+    		border: 4px #000 solid;
+    		color: $black;
+    		font-weight: 500;
+    		font-size: 24px;
+    		width: 225px;
+    		margin-top: 30px;
+    		height: 50px;
+    		&:hover {
+    			background-color: #800e0e;
+    			color: $white;
+    			-webkit-transition: all 0.4s ease 0s;
+                -moz-transition: all 0.4s ease 0s;
+                -ms-transition: all 0.4s ease 0s;
+                -o-transition: all 0.4s ease 0s;
+                transition: all 0.4s ease 0s;
+    		}
+    	}
+    }
+}
+
+
+
+.seosmm {
+
+	&-arrow {
+		width: 70px;
+		height: 30px;
+		display: block;
+		float: left;
+	}
+	&-text {
+		margin-left: 0;
+		margin-bottom: 30px;
+		font-family: 'Bookman Old Style';
+		font-weight: 400;
+		font-size: 14px;
+		color: $white;
+		text-transform: uppercase;
+	}
+
+	&-dialog {
+		margin: 100px 10%;
+	}
+	&-closebutton {
+		width: 25px;
+		height: 25px;
+	}
+
+	&-header {
+		margin-left: auto;
+		margin-right: auto;
+		color: $white;
+		border:none;
+		h3 {
+			font-family: 'Bookman Old Style';
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 26px;
+		}
+		
+		&-text {
+			font-family: 'Bookman Old Style';
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 24px;
+			color: $red;
+			margin-left: 70px;	
+		}
+	}
+
+	&-footer {
+		border: none;
+	}
+	&-content {
+		width: 80vw;
+		height: 80vh;
+		background: url("../img/seosmm-bg.jpg") no-repeat center center scroll;
+        background-size: cover;
+        opacity: 0.812;
+        background-color: #000;
+	}
+
+	&-box {
+    	
+    	width: 310px;
+    	height: 500px;
+    	background-color: #fff;
+
+    	&-h {
+    		letter-spacing: 1px;
+    		font-family: 'Corbel';
+    		text-transform: uppercase;
+    		margin-bottom: 25px;
+    		text-align: center;
+    		font-size: 30px;
+    		font-weight: 500;
+    		color: $black;
+    	}
+
+    	&-row {
+    		text-align: center;
+    		margin-bottom: 40px;
+    	}
+
+    	&-item {
+    		font-family: 'Corbel';
+    		font-weight: 400;
+    		border: 4px #000 solid;
+    		background-color: #800e0e;
+    		font-size: 18px;
+    		color: #000;
+    		width: 320px;
+    		height: 60px;
+    		
+    		&:focus {
+
+    			&::placeholder {
+    				-webkit-transition: all 0.4s ease 0s;
+    			-o-transition: all 0.4s ease 0s;
+    			transition: all 0.4s ease 0s;
+    				color: $white;
+    				padding-left: 0px;
+    			}
+    			text-decoration: none;
+    			padding-left: 10px;
+
+    			
+    		}
+    		&::placeholder {
+    			
+    			font-size: 20px;
+    			font-weight: 100;
+    		}
+    	}
+
+    	&-button {
+    		background-color: #800e0e;
+    		border: 4px #000 solid;
+    		color: $black;
+    		font-weight: 500;
+    		font-size: 24px;
+    		width: 225px;
+    		margin-top: 30px;
+    		height: 50px;
+    		&:hover {
+    			background-color: #800e0e;
+    			color: $white;
+    			-webkit-transition: all 0.4s ease 0s;
+                -moz-transition: all 0.4s ease 0s;
+                -ms-transition: all 0.4s ease 0s;
+                -o-transition: all 0.4s ease 0s;
+                transition: all 0.4s ease 0s;
+    		}
+    	}
+    }
+}
+
+.consultation {
+&-dialog {
+		margin: 100px 10% ;
+	}
+	&-closebutton {
+		width: 25px;
+		height: 25px;
+	}
+
+	&-header {
+		border:none;
+	}
+
+	&-footer {
+		border: none;
+	}
+	&-content {
+		width: 80vw;
+		height: 70vh;
+		background: url("../img/consult.jpg") no-repeat center center scroll;
+        background-size: cover;
+	}
+
+	&-box {
+    	margin-top: 160px;
+    	width: 310px;
+    	height: 500px;
+    	background-color: #fff;
+
+    	&-h {
+    		letter-spacing: 1px;
+    		font-family: 'Corbel';
+    		text-transform: uppercase;
+    		margin-bottom: 25px;
+    		text-align: center;
+    		font-size: 30px;
+    		font-weight: 500;
+    		color: $black;
+    	}
+
+    	&-row {
+    		text-align: center;
+    		margin-bottom: 40px;
+    	}
+
+    	&-item {
+    		font-family: 'Corbel';
+    		font-weight: 400;
+    		border: 4px #000 solid;
+    		background-color: #800e0e;
+    		font-size: 18px;
+    		color: #000;
+    		width: 320px;
+    		height: 60px;
+    		padding-left: 10px;
+    		&:focus {
+
+    			&::placeholder {
+    				-webkit-transition: all 0.4s ease 0s;
+    			-o-transition: all 0.4s ease 0s;
+    			transition: all 0.4s ease 0s;
+    				color: $white;
+    				padding-left: 0px;
+    			}
+    			text-decoration: none;
+    			padding-left: 10px;
+
+    			
+    		}
+    		&::placeholder {
+    			
+    			font-size: 20px;
+    			font-weight: 100;
+    		}
+    	}
+
+    	&-button {
+    		background-color: #800e0e;
+    		border: 4px #000 solid;
+    		color: $black;
+    		font-weight: 500;
+    		font-size: 24px;
+    		width: 225px;
+    		margin-top: 30px;
+    		height: 50px;
+    		&:hover {
+    			background-color: #800e0e;
+    			color: $white;
+    			-webkit-transition: all 0.4s ease 0s;
+                -moz-transition: all 0.4s ease 0s;
+                -ms-transition: all 0.4s ease 0s;
+                -o-transition: all 0.4s ease 0s;
+                transition: all 0.4s ease 0s;
+    		}
+    	}
+    }
+}
+
+
+
+.navbar-collapse {
+	
+	text-align: center;
+}
+
+.nav-item {
+	margin: auto;
+	width: 100%;
+	text-align: center;
+	height: inherit;
+	font-size: 18px;
+	background-color: #000;
+	&:hover {
+		color: $red;
+		background-color: $white;
+	}
+}
+
+
+
+
+.header {
+	height: 90vh;
+    &-list {
+    	&-box {
+    		margin-left: auto;
+    		margin-right: auto;
+    		width: 100%;
+    	}
+    	&-under {
+    		font-family: 'Georgia';
+    		color: $red;
+    		font-size: 26px;
+    		position: relative;
+    	    margin-left: 0;
+    	}
+    	position: relative;
+    	margin-left: 20px;
+    	margin-top: 30px;
+    	font-family: 'Georgia';
+    	font-size: 26px;
+    	color: $white;
+
+    	&-item {
+    		position: relative;
+    		margin-bottom: 10px;
+    	}
+    }
+
+    &-button {
+    	margin-left: auto;
+    	margin-right: auto;
+    	background-color: #800e0e;
+    	display: block;
+    	border: 5px $black solid;
+    	text-align: center;
+    	font-family: 'Georgia';
+    	width: 205px;
+    	height: 50px;
+    	text-transform: uppercase;
+    	text-decoration: none;
+    	font-size: 24px;
+    	color: $white;
+    	&:hover {
+    		text-decoration: none;
+    		color: $white;
+    		background-color: $dark-red;
+    	}
+    }
+
+    &-bonus{
+    	margin-left: auto;
+    		margin-right: auto;
+    	&-text {
+
+    	font-family: 'ITC Franklin Gothic Medium';
+    	font-size: 24px;
+    	color: $white;
+    	margin-bottom: 0;
+    }
+    	span {
+    		margin-left: 150px;
+    		font-family: 'ITC Franklin Gothic Medium';
+    		text-transform: uppercase;
+    		color: $black;
+    		font-size: 24px;
+    	}	
+    }
+}
+
+	.nav-logo {
+		width: 70;
+		height: 45px;
+	}
+
+	.logo-text {
+		font-size: 24px;
+	}
+	.header h1 {
+		font-size: 30px;
+		text-align: center;
+		margin-top: 100px;
+	}
+	.header-subline {
+		margin-top: 15px;
+		padding-left: 15px;
+		font-size: 18px;
+		text-align: center;
+	}
+
+
+	#sitedevelopment {
+		height: 2350px;
+	}
+
+	.sitedevelopment-header {
+		margin-top: 30px;
+	}
+	.sitedevelopment-box {
+		
+	}
+	.sitedevelopment-box-i{
+		text-align: center;
+	}
+	.sitedevelopment-box-image {
+		
+		width: 220px;
+		height: 220px;
+	}
+	.sitedevelopment-box-bg {
+		
+		margin-top: -160px;
+		height: 600px;
+		width: 100%;
+	}
+
+	.sitedevelopment-box h3 {
+		font-size: 18px;
+		padding-top: 155px;
+	}
+	.sitedevelopment-box h4 {
+		font-size: 18px;
+		margin-top: 10px;
+		padding-bottom: 20px;
+	}
+	.date {
+		margin-bottom: 20px;
+	}
+	.sitedevelopment-box-area {
+		margin-bottom: 25px;
+		width: inherit;
+	}
+	.sitedevelopment-box-link {
+		font-size: 18px;
+	}
+	.sitedevelopment-box-2 {
+	
+	}
+	.sitedevelopment-box-ultro h3 {
+		padding-bottom: 10px;
+	}
+
+	.smm {
+		height: 1900px;
+	}
+
+	.smm-box {
+		
+	}
+	.smm-box-bg {
+		width: 100%	;
+	}
+	.smm-box-mark {
+		margin-left: 25px;
+	}
+	.smm-box-image {
+		
+		width: 220px;
+		height: 220px;
+	}
+	.smm-box-area {
+		margin-bottom: 25px;
+		width: inherit;
+	}
+	.smm-box-link {
+		font-size: 18px;
+		margin-bottom: 10px;
+	}
+
+	.case {
+		height: 3000px;
+	}
+	.case-box {
+	
+	}
+
+	.case-box-bg {
+		width: 100%;
+	}
+
+	.case-box-button {
+		width: 280px;
+	}
+
+	.features {
+		height: 990px;
+	}
+
+	.footer {
+		height: 550px;
+	}
+	.footer-header {
+		margin-bottom: 10px;
+	}
+	.footer-header h3 {
+		line-height: 60px;
+		font-size: 40px;
+	}
+	.footer-contacts {
+		text-align: center;
+	}
+	.footer-contacts-link {
+		font-size: 20px;
+	}
+	.footer-box-button {
+		font-size: 24px;
+	}
+	.footer-logo-box {
+		text-align: center;
+		padding-left: 15px;
+	}
+}
+
+
+
+@media (min-width: 993px) and (max-width: 1200px) {
+
+
+.bonus {
+
+	&-dialog {
+		margin: 100px 10%;
+	}
+	&-closebutton {
+		width: 25px;
+		height: 25px;
+	}
+
+	&-header {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 20px;
+		border:none;
+		h3 {
+			
+			margin-left: 15%;
+			color: $red;
+		font-family: 'Bookman Old Style';
+		font-weight: 700;
+		text-transform: uppercase;
+		font-size: 32px;
+		margin-bottom: 20px;
+		}
+		&-text {
+			text-align: center;
+			font-family: 'Bookman Old Style';
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 24px;
+			color: $white;
+			padding-bottom: 30px;
+			&-red {
+				color: $red;
+		}
+		span {
+			color: $red;
+		}
+	}
+}
+	&-footer {
+		border: none;
+	}
+	&-content {
+		width: 80vw;
+		height: 800px;
+		background: url("../img/seosmm-bg.jpg") no-repeat center center scroll;
+        background-size: cover;
+        opacity: 0.812;
+        background-color: #000;
+	}
+
+	&-box {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 35px;
+    	width: 385px;
+    	height: 300px;
+    	background-color: $black;
+    	border: 3px #545050 solid;
+    	-webkit-border-radius: 10px;
+    	-moz-border-radius: 10px;
+    	-ms-border-radius: 10px;
+    	-o-border-radius: 10px;
+    	border-radius: 10px;
+
+
+    	&-plus {
+    		line-height: 0px;
+    		text-align: center;
+    		font-family: 'Bookman Old Style';
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 26px;
+    		color: $white;
+    	}
+    	&-text {
+    		line-height: 40px;
+    		text-align: center;
+    		font-family: 'Bookman Old Style';
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 26px;
+    		color: $white;
+
+    		&-red {
+    			color:$red;
+    		}
+
+
+    	}
+    	&-button {
+    		background-color: #800e0e;
+    		border: 4px #000 solid;
+    		color: $black;
+    		font-weight: 500;
+    		font-size: 24px;
+    		width: 225px;
+    		margin-top: 30px;
+    		height: 50px;
+    		&:hover {
+    			background-color: #800e0e;
+    			color: $white;
+    			-webkit-transition: all 0.4s ease 0s;
+                -moz-transition: all 0.4s ease 0s;
+                -ms-transition: all 0.4s ease 0s;
+                -o-transition: all 0.4s ease 0s;
+                transition: all 0.4s ease 0s;
+    		}
+    	}
+    }
+}
+
+
+.sitedevelop {
+	&-body {
+		
+	}
+	&-arrow {
+		width: 70px;
+		height: 30px;
+		display: block;
+		vertical-align: middle;
+		float: left;
+	}
+
+	&-text {
+		
+		
+		margin-bottom: 30px;
+		font-family: 'Bookman Old Style';
+		font-weight: 400;
+		font-size: 20px;
+		color: $white;
+		text-transform: uppercase;
+	}
+	&-dialog {
+		margin: 100px 10%;
+	}
+	&-closebutton {
+		width: 25px;
+		height: 25px;
+	}
+
+	&-header {
+		margin-left: auto;
+		margin-right: auto;
+		color: $white;
+		border:none;
+		h3 {
+			font-family: 'Bookman Old Style';
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 24px;
+		}
+		
+		&-text {
+			text-align: center;
+			font-family: 'Bookman Old Style';
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 24px;
+			color: $red;
+			
+		}
+	}
+
+	&-footer {
+		border: none;
+	}
+	&-content {
+		width: 80vw;
+		height: 100vh;
+		background: url("../img/site-develop-bg.jpg") no-repeat center center scroll;
+        background-size: cover;
+        opacity: 0.812;
+        background-color: #000;
+	}
+
+	&-box {
+    	
+    	width: 100vw;
+    	height: 500px;
+    	background-color: #fff;
+
+    	&-h {
+    		letter-spacing: 1px;
+    		font-family: 'Corbel';
+    		text-transform: uppercase;
+    		margin-bottom: 25px;
+    		text-align: center;
+    		font-size: 22px;
+    		font-weight: 500;
+    		color: $black;
+    	}
+
+    	&-row {
+    		text-align: center;
+    		margin-bottom: 40px;
+    	}
+
+    	&-item {
+    		font-family: 'Corbel';
+    		font-weight: 400;
+    		border: 4px #000 solid;
+    		background-color: #800e0e;
+    		font-size: 18px;
+    		color: #000;
+    		width: 320px;
+    		height: 60px;
+    		padding-left: 10px;
+    		&:focus {
+
+    			&::placeholder {
+    				-webkit-transition: all 0.4s ease 0s;
+    			-o-transition: all 0.4s ease 0s;
+    			transition: all 0.4s ease 0s;
+    				color: $white;
+    				padding-left: 0px;
+    			}
+    			text-decoration: none;
+    			padding-left: 10px;
+
+    			
+    		}
+    		&::placeholder {
+    			
+    			font-size: 20px;
+    			font-weight: 100;
+    		}
+    	}
+
+    	&-button {
+    		background-color: #800e0e;
+    		border: 4px #000 solid;
+    		color: $black;
+    		font-weight: 500;
+    		font-size: 24px;
+    		width: 225px;
+    		margin-top: 30px;
+    		height: 50px;
+    		&:hover {
+    			background-color: #800e0e;
+    			color: $white;
+    			-webkit-transition: all 0.4s ease 0s;
+                -moz-transition: all 0.4s ease 0s;
+                -ms-transition: all 0.4s ease 0s;
+                -o-transition: all 0.4s ease 0s;
+                transition: all 0.4s ease 0s;
+    		}
+    	}
+    }
+}
+
+
+
+.seosmm {
+
+	&-arrow {
+		width: 70px;
+		height: 30px;
+		display: block;
+		float: left;
+	}
+	&-text {
+		margin-left: 0;
+		margin-bottom: 30px;
+		font-family: 'Bookman Old Style';
+		font-weight: 400;
+		font-size: 20px;
+		color: $white;
+		text-transform: uppercase;
+	}
+
+	&-dialog {
+		margin: 100px 10%;
+	}
+	&-closebutton {
+		width: 25px;
+		height: 25px;
+	}
+
+	&-header {
+		margin-left: auto;
+		margin-right: auto;
+		color: $white;
+		border:none;
+		h3 {
+			font-family: 'Bookman Old Style';
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 24px;
+		}
+		
+		&-text {
+			font-family: 'Bookman Old Style';
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 24px;
+			color: $red;
+			margin-left: 70px;	
+		}
+	}
+
+	&-footer {
+		border: none;
+	}
+	&-content {
+		width: 80vw;
+		height: 100vh;
+		background: url("../img/seosmm-bg.jpg") no-repeat center center scroll;
+        background-size: cover;
+        opacity: 0.812;
+        background-color: #000;
+	}
+
+	&-box {
+    	
+    	width: 310px;
+    	height: 500px;
+    	background-color: #fff;
+
+    	&-h {
+    		letter-spacing: 1px;
+    		font-family: 'Corbel';
+    		text-transform: uppercase;
+    		margin-bottom: 25px;
+    		text-align: center;
+    		font-size: 30px;
+    		font-weight: 500;
+    		color: $black;
+    	}
+
+    	&-row {
+    		text-align: center;
+    		margin-bottom: 40px;
+    	}
+
+    	&-item {
+    		font-family: 'Corbel';
+    		font-weight: 400;
+    		border: 4px #000 solid;
+    		background-color: #800e0e;
+    		font-size: 18px;
+    		color: #000;
+    		width: 320px;
+    		height: 60px;
+    		
+    		&:focus {
+
+    			&::placeholder {
+    				-webkit-transition: all 0.4s ease 0s;
+    			-o-transition: all 0.4s ease 0s;
+    			transition: all 0.4s ease 0s;
+    				color: $white;
+    				padding-left: 0px;
+    			}
+    			text-decoration: none;
+    			padding-left: 10px;
+
+    			
+    		}
+    		&::placeholder {
+    			
+    			font-size: 20px;
+    			font-weight: 100;
+    		}
+    	}
+
+    	&-button {
+    		background-color: #800e0e;
+    		border: 4px #000 solid;
+    		color: $black;
+    		font-weight: 500;
+    		font-size: 24px;
+    		width: 225px;
+    		margin-top: 30px;
+    		height: 50px;
+    		&:hover {
+    			background-color: #800e0e;
+    			color: $white;
+    			-webkit-transition: all 0.4s ease 0s;
+                -moz-transition: all 0.4s ease 0s;
+                -ms-transition: all 0.4s ease 0s;
+                -o-transition: all 0.4s ease 0s;
+                transition: all 0.4s ease 0s;
+    		}
+    	}
+    }
+}
+
+.consultation {
+&-dialog {
+		margin: 100px 20% ;
+	}
+	&-closebutton {
+		width: 25px;
+		height: 25px;
+	}
+
+	&-header {
+		border:none;
+	}
+
+	&-footer {
+		border: none;
+	}
+	&-content {
+		width: 60vw;
+		height: 80vh;
+		background: url("../img/consult.jpg") no-repeat center center scroll;
+        background-size: cover;
+	}
+
+	&-box {
+    	margin-top: 160px;
+    	width: 310px;
+    	height: 500px;
+    	background-color: #fff;
+
+    	&-h {
+    		letter-spacing: 1px;
+    		font-family: 'Corbel';
+    		text-transform: uppercase;
+    		margin-bottom: 25px;
+    		text-align: center;
+    		font-size: 30px;
+    		font-weight: 500;
+    		color: $black;
+    	}
+
+    	&-row {
+    		text-align: center;
+    		margin-bottom: 40px;
+    	}
+
+    	&-item {
+    		font-family: 'Corbel';
+    		font-weight: 400;
+    		border: 4px #000 solid;
+    		background-color: #800e0e;
+    		font-size: 18px;
+    		color: #000;
+    		width: 320px;
+    		height: 60px;
+    		padding-left: 10px;
+    		&:focus {
+
+    			&::placeholder {
+    				-webkit-transition: all 0.4s ease 0s;
+    			-o-transition: all 0.4s ease 0s;
+    			transition: all 0.4s ease 0s;
+    				color: $white;
+    				padding-left: 0px;
+    			}
+    			text-decoration: none;
+    			padding-left: 10px;
+
+    			
+    		}
+    		&::placeholder {
+    			
+    			font-size: 20px;
+    			font-weight: 100;
+    		}
+    	}
+
+    	&-button {
+    		background-color: #800e0e;
+    		border: 4px #000 solid;
+    		color: $black;
+    		font-weight: 500;
+    		font-size: 24px;
+    		width: 225px;
+    		margin-top: 30px;
+    		height: 50px;
+    		&:hover {
+    			background-color: #800e0e;
+    			color: $white;
+    			-webkit-transition: all 0.4s ease 0s;
+                -moz-transition: all 0.4s ease 0s;
+                -ms-transition: all 0.4s ease 0s;
+                -o-transition: all 0.4s ease 0s;
+                transition: all 0.4s ease 0s;
+    		}
+    	}
+    }
+}
+
+
+.icon {
+	width: 100px;
+}
+
+.navbar {
+	background-color: $black;
+	height: 85px;
+	padding: 0;
+	margin: 0;
+}
+
+
+.nav-container {
+	height: inherit;
+}
+
+.nav-logo {
+	width: 90px;
+	height: 65px;
+}
+.navbar-light .navbar-nav .nav-link {
+	font-family: 'Tahoma', sans-serif;
+	color: $red;
+	display: block;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	&:hover {
+		color: $red;
+	}
+}
+.navbar-collapse {
+	height: inherit;
+}
+
+.navbar-nav {
+	height: inherit;
+}
+
+.nav-item {
+
+	width: 140px;
+	text-align: center;
+	height: inherit;
+	font-size: 16px;
+	
+	&:hover {
+		color: $red;
+		background-color: $white;
+	}
+}
+
+
+.logo-text {
+	font-family: 'Rockwell-ExtraBold', sans-serif;
+	font-weight: 900;
+	color: $red;
+	font-size: 30px;
+	
+}
+
+.header-list {
+  list-style-type: none;
+}
+ 
+.header-list-item:before {
+  content: "\2B24";
+  padding-right: 10px;
+}
+
+#parallelogram {
+	display: block;
+	width: 350px;
+	height: 290px;
+	-webkit-transform: skew(-20deg);
+	   -moz-transform: skew(-20deg);
+	     -o-transform: skew(-20deg);
+	background: #2d1b1b;
+	opacity: 0.812;
+	position: absolute; 
+	top: 0; 
+	left: 0;
+
+}
+/* Header */
+.header-2-image {
+	width: 530px   !important;
+    	height: 445px  !important;
+    	margin-top: -80px  !important;
+    	margin-left: -45px  !important;
+}
+.header	{
+	width: 100%;
+    height: 1000px;
+    background: url("../img/header-2-bg.jpg") no-repeat center center scroll;
+    background-size: cover;
+
+    &-row {
+    	margin-top: 30px;
+    }
+
+    &-image {
+    	width: 560px;
+    	height: 475px;
+    	margin-top: -80px;
+    	margin-left: -45px;
+    }
+    h1 {
+    	text-transform: uppercase;
+    	margin-top: 170px;
+    	font-family: 'Verdana';
+    	font-weight: 700;
+    	font-size: 55px;
+    	color: $white;
+    }
+
+    &-subline {
+    	margin-top: 65px;
+    	text-transform: uppercase;
+    	font-family: 'ITC Franklin Gothic Medium';
+    	font-size: 24px;
+    	color: $white;
+    	padding-left: 120px;
+    }
+
+    
+    &-list {
+    	&-under {
+    		font-family: 'Georgia';
+    		color: $red;
+    		font-size: 26px;
+    		position: absolute; 
+    	    top: 63%;
+    	    left: 20%;
+    	    margin-left: -80px;
+    	}
+    	position: absolute; 
+    	top: 0%;
+    	margin-left: 20px;
+    	margin-top: 30px;
+    	font-family: 'Georgia';
+    	font-size: 20px;
+    	color: $white;
+    	&-item {
+    		margin-bottom: 10px;
+    	}
+    }
+   
+
+    &-button {
+    	background-color: #800e0e;
+    	display: block;
+    	border: 5px $black solid;
+    	text-align: center;
+    	font-family: 'Georgia';
+    	width: 205px;
+    	height: 50px;
+    	text-transform: uppercase;
+    	text-decoration: none;
+    	font-size: 24px;
+    	color: $white;
+    	&:hover {
+    		text-decoration: none;
+    		color: $white;
+    		background-color: $dark-red;
+    	}
+    }
+
+    &-bonus{
+    	&-text {
+    	font-family: 'ITC Franklin Gothic Medium';
+    	font-size: 22px;
+    	color: $white;
+    	margin-bottom: 0;
+    }
+    	span {
+    		margin-left: 150px;
+    		font-family: 'ITC Franklin Gothic Medium';
+    		text-transform: uppercase;
+    		color: $black;
+    		font-size: 24px;
+    	}	
+    }
+}
+
+button, 
+button:active, 
+button:focus {
+    outline: none;
+}
+
+/* Site development */
+#sitedevelopment {
+	background: $white url("../img/fon_163.jpg") no-repeat center center scroll;
+    background-size: cover;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(0, 0, 0);
+    box-shadow: inset 0px 15px 69.66px 19.34px rgba(111, 13, 13, 0.7);
+    position: static;
+    z-index: 111;
+}
+
+.sitedevelopment {
+	height: 1300px;
+	z-index: 333;
+    
+
+    &-header {
+	    text-align: center;
+		color: $dark-red;
+		margin-top: 50px;
+		font-family: 'Franklin Gothic Heavy';
+		font-size: 36px;
+    }
+	
+	&-box {
+		opacity: .99;
+		width: 270px;
+		margin-top: 40px;
+		text-align: center;
+		&-2 {
+			margin-left: 115px;
+		}
+		h3 {
+			padding-top: 180px;
+			text-transform: uppercase;
+			font-family: 'Bookman Old Style';
+			font-weight: 700;
+			font-size: 20px;
+			color: $black;
+			margin-top: 40px;
+		}
+		h4 {
+			text-transform: uppercase;
+			font-family: 'Bookman Old Style';
+			font-weight: 700;
+			font-size: 22px;
+			color: $black;
+			margin-top: 40px;
+		}
+
+		&-bg {
+			 margin-top: -180px;
+			 background-color: rgb(107, 8, 8);
+             box-shadow: inset 0px 6px 85.5px 4.5px rgba(0, 0, 0, 0.52);
+             position: relative;
+             
+             width: 100%;
+             height: 880px;
+             z-index: 244;
+
+             p {
+             	color: $white;
+             	font-family: 'Sylfaen';
+             	font-size: 24px;
+             }
+		}
+
+		h4 {
+			padding-bottom: 100px;
+		}
+		&-image {
+			margin-left: auto;
+			width: 180px;
+			height: 180px;
+			position: relative;
+			z-index: 333;
+		}
+
+		&-ultro {
+			
+			h3 {
+				padding-bottom: 168px;
+			}
+		}
+
+		&-button {
+			font-family: 'ITC Franklin Gothic Medium';
+			text-transform: uppercase;
+			color: $white;
+			font-size: 14px;
+			border: none;
+			padding-left: 20px;
+			padding-right: 20px;
+			padding-top: 15px;
+			padding-bottom: 15px;
+			background-color: $black;
+			&:hover {
+				text-decoration: none;
+				color: $white;
+				background-color: #aeaeae;
+				transition: all 0.5s;
+			}
+		}
+		&-area {
+			display: block;
+			height: 80px;
+			width: inherit;
+			margin-top: 25px;
+			
+			margin-bottom: 45px;
+			border: 5px $red solid;
+			background-color: $black;
+			&-image {
+				float: left;
+			}
+		}
+
+		&-link {
+			font-family: 'ITC Franklin Gothic Medium';
+			font-weight: 400;
+			font-size: 24px;
+			background-color: transparent;
+			border: none;
+			text-transform: uppercase;
+			text-decoration: none;
+			color: $white;
+			&:hover {
+				text-decoration: none;
+
+				color: $black;
+			}
+		}
+
+	}
+
+}
+
+
+.date {
+	margin-bottom: 100px;
+}
+
+
+/* SMM */
+
+
+
+.smm {
+	height: 1300px;
+	border-style: solid;
+    border-width: 3px;
+    border-color: rgb(0, 0, 0);
+    background: url("../img/fon_163.jpg") no-repeat center center scroll;
+    background-size: cover;
+    box-shadow: inset 0px 15px 69.66px 19.34px rgba(111, 13, 13, 0.7);
+   
+
+    &-header {
+	    text-align: center;
+		color: $dark-red;
+		margin-top: 50px;
+		font-family: 'Franklin Gothic Heavy';
+		font-size: 36px;
+    }
+	
+	&-box {
+		opacity: .99;
+		width: 100%;
+		margin-top: 40px;
+		margin-left: auto;
+		text-align: center;
+		h3 {
+			padding-top: 180px;
+			text-transform: uppercase;
+			font-family: 'Bookman Old Style';
+			font-weight: 700;
+			font-size: 24px;
+			color: $black;
+			margin-bottom: 40px;
+		}
+
+		&-bg {
+			 margin-top: -180px;
+	    	 background-color: rgb(107, 8, 8);
+             box-shadow: inset 0px 5px 85.5px 4.5px rgba(0, 0, 0, 0.52);
+             width: 100%;
+             z-index: 244;
+
+          
+		}
+
+		&-mark {
+			display: block;
+			float: left;
+			width: 35px;
+			height: 35px;
+			vertical-align: middle;
+		}
+
+		p {
+			font-family: 'Tahoma';
+			font-weight: 700;
+			font-size: 24px;
+
+		}
+		
+		&-image {
+			width: 230px;
+			height: 230px;
+			margin-bottom: 60px;
+			
+			z-index: 522;
+		}
+
+		
+
+		&-button {
+			font-family: 'ITC Franklin Gothic Medium';
+			text-transform: uppercase;
+			color: $white;
+			font-size: 14px;
+			border: none;
+			padding-left: 20px;
+			padding-right: 20px;
+			padding-top: 15px;
+			padding-bottom: 15px;
+			background-color: $black;
+			&:hover {
+				text-decoration: none;
+				color: $white;
+				background-color: #aeaeae;
+				transition: all 0.5s;
+			}
+		}
+		&-area {
+			display: block;
+			height: 80px;
+			width: 100%;
+			margin-top: 25px;
+			margin-bottom: 75px;
+			border: 5px $red solid;
+			background-color: $black;
+			&-image {
+				float: left;
+			}
+		}
+
+		&-link {
+			font-family: 'ITC Franklin Gothic Medium';
+			font-weight: 400;
+			font-size: 24px;
+			text-transform: uppercase;
+			text-decoration: none;
+			background-color: transparent;
+			border: none;
+			color: $white;
+			&:hover {
+				text-decoration: none;
+				color: $black;
+			}
+		}
+
+	}
+
+}
+.empty {
+	height: 104px;
+}
+
+/* Case */
+
+
+
+.case {
+	height: 1200px;
+	border-style: solid;
+    border-width: 3px;
+    border-color: rgb(0, 0, 0);
+ 	background: url("../img/fon_163.jpg") no-repeat center center scroll;
+    background-size: cover;
+    box-shadow: inset 0px 15px 69.66px 19.34px rgba(111, 13, 13, 0.7);
+   
+
+    &-header {
+	    text-align: center;
+		color: $dark-red;
+		margin-top: 50px;
+		font-family: 'Franklin Gothic Heavy';
+		font-size: 36px;
+    }
+	
+	&-box {
+		opacity: .99;
+		width: 270px;
+		margin-top: 40px;
+		text-align: center;
+		
+		&-bg {
+			 
+			 background-color: rgb(107, 8, 8);
+             box-shadow: inset 0px 6px 85.5px 4.5px rgba(0, 0, 0, 0.52);
+             
+             width: 270px;
+             padding-bottom: 180px;
+             z-index: 244;
+
+             h3 {
+             	padding-top: 40px;
+             }
+             p {
+             	color: $white;
+             	font-family: 'Sylfaen';
+             	font-size: 24px;
+             }
+		}
+
+		h3 {
+			text-transform: uppercase;
+			font-family: 'Bookman Old Style';
+			font-weight: 700;
+			font-size: 24px;
+			color: $black;
+			margin-bottom: 40px;
+		}
+		&-ultro {
+			
+			margin-bottom: 0px;
+			h3 {
+				padding-top: 75px;
+			}
+		}
+
+		&-plus {
+			margin-top: 25px;
+			margin-bottom: 25px;
+			text-align: center;
+			width: 30px;
+			height: 30px;
+			
+		}
+
+		p {
+			font-family: 'Tahoma';
+			font-weight: 700;
+			font-size: 24px;
+
+		}
+		
+		&-image {
+			width: 230px;
+			height: 230px;
+			margin-bottom: 60px;
+		}
+
+		&-block {
+
+			margin-top: 20px;
+			text-align: center;
+		}
+
+		&-button {
+			border: none;
+			text-align: center;
+			font-family: 'ITC Franklin Gothic Medium';
+			text-transform: uppercase;
+			color: $white;
+			font-size: 24px;
+			width: 310px;
+			height: 55px;
+			background-color: $black;
+			border-radius: 10px;
+			&:hover {
+				text-decoration: none;
+				color: $white;
+				
+				transition: all 0.5s;
+			}
+		}
+		&-area {
+			display: block;
+			height: 80px;
+			width: 270px;
+			margin-top: 25px;
+			margin-left: 45px;
+			margin-bottom: 75px;
+			border: 5px $red solid;
+			background-color: $black;
+			&-image {
+				float: left;
+			}
+		}
+
+		&-link {
+			text-align: center;
+			border: none;
+			background-color: $white;
+			font-family: 'ITC Franklin Gothic Medium';
+			font-weight: 400;
+			font-size: 16px;
+			color: $dark-red;
+			margin-top: 35px;
+			text-transform: uppercase;
+			text-decoration: underline;
+			
+			&:hover {
+				text-decoration: none;
+				color: $dark-red;;
+			}
+		}
+
+	}
+
+}
+
+.sunduk {
+	&-box {
+		margin-top: -180px;
+		margin-left: -20px;
+		z-index: 999;
+	}
+	&-side {
+		margin-left: 30px;
+		width: 240px;
+		height: 240px;
+		
+	}
+	&-center {
+		margin-left: 20px;
+		width: 270px;
+		height: 300px;
+		
+	}
+}
+
+
+.notebook{
+	&-image {
+	height: 823px;
+	background: url("../img/notebook-image.jpg") no-repeat center center scroll;
+    background-size: cover;
+   
+  }
+    &-header {
+    	text-align: center;
+    	margin-top: 50px;
+    	&-text {
+    		font-family: 'Century Schoolbook';
+			font-weight: 400;
+			color: $white;
+			font-size: 36px;
+    	}
+    }
+    &-quote {
+    	font-family: 'Century Schoolbook';
+			font-weight: 400;
+			color: $white;
+			font-size: 24px;
+    }
+    &-box {
+
+    	&-text {
+    		font-family: 'ITC Franklin Gothic Medium';
+			font-weight: 400;
+			color: $white;
+			font-size: 19px;
+    	}
+    	&-image {
+    		width: 450px;
+    		height: 670px;
+    	}
+    }
+}
+
+
+
+/* Features */
+
+.features {
+	height: 890px;
+	background: url("../img/features-bg.jpg") no-repeat center center scroll;
+    background-size: cover;
+   
+	&-header {
+		margin-top: 60px;
+		text-align: center;
+	}
+	&-box {
+		padding-left: 0;
+		padding-right: 0;
+		border-bottom: 3px black solid;
+		text-transform: uppercase;
+		h5 {
+			font-family: 'ITC Franklin Gothic Medium';
+			font-weight: 400;
+			font-size: 22px;
+			text-transform: uppercase;
+			margin-top: 20px;
+			padding-bottom: 25px;
+			border-bottom: 3px black solid;
+		}
+
+		span {
+			color: $red;
+		}
+		margin-top: 55px;
+		text-align: center;
+		&-icon {
+			text-align: center;
+			width: 100px;
+			height: 100px;
+		}
+	}
+}
+
+
+/* Footer */ 
+
+.footer {
+	height: 360px;
+	background-color: #380202;
+
+	&-header {
+		margin-bottom: 25px;	
+		text-align: center;
+		h3 {
+			font-family: 'Franklin Gothic Heavy';
+		    text-transform: uppercase;
+	        color: $white;
+			line-height: 90px;
+			font-size: 60px;
+		}
+	}
+	&-box {
+		margin-top: 15px;
+		text-align: center;
+		&-button {
+            text-align: center;
+			font-family: 'Tahoma';
+			font-weight: 700;
+			text-transform: uppercase;
+			color: $white;
+			font-size: 30px;
+			padding-left: 20px;
+			padding-right: 20px;
+			padding-top: 15px;
+			padding-bottom: 15px;
+			background-color: $black;
+			border: 3px $white solid;
+			border-radius: 10px;
+			&:hover {
+				border-color:  $black;
+				text-decoration: none;
+				color: $black;
+				background-color: $white;
+				transition: all 0.5s;
+			}
+		}
+	}
+	&-logo {
+		&-box {
+			padding-top: 5px;
+			padding-left: 65px;
+		}
+		margin-top: 5px;
+		&-text {
+			font-family: 'Rockwell-ExtraBold', sans-serif;
+	        font-weight: 900;
+	        text-shadow:
+			-1px -1px 0 #000,
+			1px -1px 0 #000,
+			-1px 1px 0 #000,
+			1px 1px 0 #000;
+	        color: #380202;
+	        font-size: 60px;
+	        
+		}
+		&:hover {
+	        	text-decoration: none;
+	        }
+	}
+	&-contacts {
+		&-link {
+			color: $white;
+			font-size: 24px;
+			&:hover {
+				text-decoration: none;
+				color: $white;
+			}
+		}
+	}
+}
+
+
+}
+
+
+
